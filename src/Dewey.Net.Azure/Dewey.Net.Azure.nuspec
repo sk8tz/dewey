@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <description>$description$</description>
+    <authors>Cady.IO</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright © Cady.IO</copyright>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/cady-io/dewey</projectUrl>
+    <dependencies>
+      <group targetFramework="net45">
+        <dependency id="Dewey.Net" version="2.1.0.0" />
+        <dependency id="Microsoft.Azure.KeyVault.Core" version="1.0.0" />
+        <dependency id="Microsoft.Data.Edm" version="5.6.4" />
+        <dependency id="Microsoft.Data.OData" version="5.6.4" />
+        <dependency id="Microsoft.Data.Services.Client" version="5.6.4" />
+        <dependency id="Newtonsoft.Json" version="7.0.1" />
+        <dependency id="System.Spatial" version="5.6.4" />
+        <dependency id="WindowsAzure.Storage" version="5.0.2" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
