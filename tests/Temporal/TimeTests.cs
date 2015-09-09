@@ -1,5 +1,5 @@
 ﻿using Dewey.Net.Temporal;
-using Dewey.Net.Test;
+using Dewey.Net.xUnit;
 using System;
 using Xunit;
 using Xunit.Abstractions;

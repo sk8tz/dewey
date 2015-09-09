@@ -36,6 +36,10 @@
     <OutputPath>bin\Live\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dewey.Net, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Dewey.Net.2.1.0.0\lib\net45\Dewey.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
@@ -94,19 +98,12 @@
     <Compile Include="Exceptions\UnauthorizedException.cs" />
     <Compile Include="Html\HtmlExtensions.cs" />
     <Compile Include="Http\HttpContextExtensions.cs" />
-    <Compile Include="Json\JsonDateTimeConverter.cs" />
     <Compile Include="Json\JsonNetResult.cs" />
-    <Compile Include="Json\JsonPropertyNameConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Dewey.Net.Mvc.nuspec" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Dewey.Net\Dewey.Net.csproj">
-      <Project>{14b2abc3-36b6-4f60-9070-c40fad9c2ed9}</Project>
-      <Name>Dewey.Net</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
