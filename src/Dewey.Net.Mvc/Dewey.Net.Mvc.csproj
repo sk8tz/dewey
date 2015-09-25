@@ -36,8 +36,8 @@
     <OutputPath>bin\Live\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dewey.Net, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Dewey.Net.2.4.0.0\lib\net45\Dewey.Net.dll</HintPath>
+    <Reference Include="Dewey.Net, Version=2.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Dewey.Net.2.7.3.0\lib\net45\Dewey.Net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -100,6 +100,9 @@
     <Compile Include="Http\HttpContextExtensions.cs" />
     <Compile Include="Json\JsonNetResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Temporal\QuarterModelBinder.cs" />
+    <Compile Include="Temporal\DateRangeModelBinder.cs" />
+    <Compile Include="Temporal\DateModelBinder.cs" />
     <Compile Include="Temporal\TimeModelBinder.cs" />
   </ItemGroup>
   <ItemGroup>

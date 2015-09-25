@@ -3,21 +3,25 @@ using System.Runtime.Caching;
 
 namespace Dewey.Net.Caching
 {
-    public static class Cache<T>
+    public static class Cache
     {
+        private static readonly MemoryCache _cache = new MemoryCache("MemoryCache");
+
+        public static MemoryCache Instance => _cache;
+
+        public static int SlidingExpirationMinutes = 30;
+
         private static CacheItemPolicy _policy => new CacheItemPolicy()
         {
-            SlidingExpiration = TimeSpan.FromMinutes(30)
+            SlidingExpiration = TimeSpan.FromMinutes(SlidingExpirationMinutes)
         };
-
-        private static MemoryCache _cache = new MemoryCache("MemoryCache");
 
         public static void SetExpiration(int expiration)
         {
             _policy.SlidingExpiration = TimeSpan.FromMinutes(expiration);
         }
 
-        private static string GetCacheKey(string key)
+        private static string GetCacheKey<T>(string key)
         {
             string typeName = typeof(T).Name;
 
@@ -27,41 +31,41 @@ namespace Dewey.Net.Caching
 
             return string.Format("{0}-{1}", typeName, key);
         }
-
-        public static void Set(string key, T value)
+        
+        public static void Set<T>(string key, T value)
         {
-            key = GetCacheKey(key);
+            key = GetCacheKey<T>(key);
 
             _cache.Set(key, value, _policy);
         }
 
-        public static void Remove(string key)
+        public static void Remove<T>(string key)
         {
-            key = GetCacheKey(key);
+            key = GetCacheKey<T>(key);
 
             _cache.Remove(key);
         }
 
         public static void Clear()
         {
-            _cache.Dispose();
-
-            _cache = new MemoryCache("MemoryCache");
+            foreach (var element in _cache) {
+                _cache.Remove(element.Key);
+            }
         }
 
-        public static bool Contains(string key)
+        public static bool Contains<T>(string key)
         {
-            key = GetCacheKey(key);
+            key = GetCacheKey<T>(key);
 
             return _cache.Contains(key);
         }
 
-        public static bool Get(string key, out T value)
+        public static bool Get<T>(string key, out T value)
         {
             try {
-                key = GetCacheKey(key);
+                key = GetCacheKey<T>(key);
 
-                if (!Contains(key)) {
+                if (!Contains<T>(key)) {
                     value = default(T);
 
                     return false;

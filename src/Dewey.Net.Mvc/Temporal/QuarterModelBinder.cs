@@ -3,7 +3,7 @@ using System.Web.Mvc;
 
 namespace Dewey.Net.Mvc.Temporal
 {
-    public class TimeModelBinder : IModelBinder
+    public class QuarterModelBinder : IModelBinder
     {
         public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
@@ -15,7 +15,9 @@ namespace Dewey.Net.Mvc.Temporal
                 var s = val.AttemptedValue as string;
 
                 if (s != null) {
-                    return new Time(s);
+                    Quarter quarter = s;
+
+                    return quarter;
                 }
             }
 

@@ -65,8 +65,11 @@
     <Compile Include="Log\Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\Crypto.cs" />
+    <Compile Include="Temporal\Date.cs" />
+    <Compile Include="Temporal\DateRange.cs" />
     <Compile Include="Temporal\DateTimeExtensions.cs" />
     <Compile Include="Temporal\DateTimeUtils.cs" />
+    <Compile Include="Temporal\Quarter.cs" />
     <Compile Include="Temporal\Time.cs" />
     <Compile Include="Temporal\Times.cs" />
     <Compile Include="Types\DecimalExtensions.cs" />
