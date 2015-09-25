@@ -15,6 +15,30 @@ namespace Dewey.Net.Tests.Temporal
         }
 
         [Fact]
+        public void TestTimeFromShortString()
+        {
+            try {
+                var constructorTime = new Time("04:00 AM");
+
+                var contructorResult = constructorTime.ToString();
+
+                Assert.Equal("04:00:00 AM", contructorResult);
+
+                constructorTime = new Time("4:00 AM");
+
+                contructorResult = constructorTime.ToString();
+
+                Assert.Equal("04:00:00 AM", contructorResult);
+
+                Print(contructorResult);
+            } catch (Exception ex) {
+                Print(ex.Message);
+
+                throw ex;
+            }
+        }
+
+        [Fact]
         public void TestTimeFromString()
         {
             try {

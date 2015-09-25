@@ -33,14 +33,44 @@ namespace Dewey.Net.Blob
             return await Provider.DownloadAsync(container, name);
         }
 
-        public string GetUrl(string container, string name)
+        public string GetBlobUrl(string container, string name)
         {
-            return Provider.GetUrl(container, name);
+            return Provider.GetBlobUrl(container, name);
         }
 
-        public async Task<string> GetUrlAsync(string container, string name)
+        public async Task<string> GetBlobUrlAsync(string container, string name)
         {
-            return await Provider.GetUrlAsync(container, name);
+            return await Provider.GetBlobUrlAsync(container, name);
+        }
+
+        public Uri GetBlobUri(string container, string name)
+        {
+            return Provider.GetBlobUri(container, name);
+        }
+
+        public async Task<Uri> GetBlobUriAsync(string container, string name)
+        {
+            return await Provider.GetBlobUriAsync(container, name);
+        }
+
+        public string GetContainerUrl(string container)
+        {
+            return Provider.GetContainerUrl(container);
+        }
+
+        public async Task<string> GetContainerUrlAsync(string container)
+        {
+            return await Provider.GetContainerUrlAsync(container);
+        }
+
+        public Uri GetContainerUri(string container)
+        {
+            return Provider.GetContainerUri(container);
+        }
+
+        public async Task<Uri> GetContainerUriAsync(string container)
+        {
+            return await Provider.GetContainerUriAsync(container);
         }
 
         public void Upload(string container, string name, byte[] data)

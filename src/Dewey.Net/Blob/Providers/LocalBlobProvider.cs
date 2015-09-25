@@ -21,7 +21,7 @@ namespace Dewey.Net.Blob.Providers
 
         public byte[] Download(string container, string name)
         {
-            var uri = GetUri(container, name);
+            var uri = GetBlobUri(container, name);
 
             using (var client = new WebClient()) {
                 var result = client.DownloadData(uri);
@@ -32,7 +32,7 @@ namespace Dewey.Net.Blob.Providers
 
         public async Task<byte[]> DownloadAsync(string container, string name)
         {
-            var uri = GetUri(container, name);
+            var uri = GetBlobUri(container, name);
 
             using (var client = new WebClient()) {
                 var result = await client.DownloadDataTaskAsync(uri);
@@ -41,28 +41,56 @@ namespace Dewey.Net.Blob.Providers
             }
         }
 
-        public string GetUrl(string container, string name)
+        public string GetContainerUrl(string container)
         {
-            return GetUri(container, name).AbsolutePath;
+            return GetContainerUri(container).AbsolutePath;
         }
 
-        public async Task<string> GetUrlAsync(string container, string name)
+        public async Task<string> GetContainerUrlAsync(string container)
         {
-            var result = await GetUriAsync(container, name);
+            var result = await GetContainerUriAsync(container);
 
             return result.AbsolutePath;
         }
 
-        public Uri GetUri(string container, string name)
+        public string GetBlobUrl(string container, string name)
         {
-            var path = Path.Combine(BlobDirectory, name);
+            return GetBlobUri(container, name).AbsolutePath;
+        }
+
+        public async Task<string> GetBlobUrlAsync(string container, string name)
+        {
+            var result = await GetBlobUriAsync(container, name);
+
+            return result.AbsolutePath;
+        }
+
+        public Uri GetContainerUri(string container)
+        {
+            var path = Path.Combine(BlobDirectory, container);
 
             return new Uri(path);
         }
 
-        public Task<Uri> GetUriAsync(string container, string name)
+        public Task<Uri> GetContainerUriAsync(string container)
         {
-            var result = GetUri(container, name);
+            var result = GetContainerUri(container);
+
+            return Task.FromResult(result);
+        }
+
+        public Uri GetBlobUri(string container, string name)
+        {
+            var path = Path.Combine(BlobDirectory, container);
+
+            path = Path.Combine(path, name);
+
+            return new Uri(path);
+        }
+
+        public Task<Uri> GetBlobUriAsync(string container, string name)
+        {
+            var result = GetBlobUri(container, name);
 
             return Task.FromResult(result);
         }
@@ -77,7 +105,7 @@ namespace Dewey.Net.Blob.Providers
                 }
             }
 
-            var uri = GetUri(container, name);
+            var uri = GetBlobUri(container, name);
 
             using (var client = new WebClient()) {
                 client.UploadData(uri, data);
@@ -94,7 +122,7 @@ namespace Dewey.Net.Blob.Providers
                 }
             }
 
-            var uri = GetUri(container, name);
+            var uri = GetBlobUri(container, name);
 
             using (var client = new WebClient()) {
                 await client.UploadDataTaskAsync(uri, data);
@@ -117,18 +145,16 @@ namespace Dewey.Net.Blob.Providers
 
         public bool Exists(string container, string name)
         {
-            var url = GetUrl(container, name);
+            var url = GetBlobUrl(container, name);
 
             return File.Exists(url);
         }
 
-        public Task<bool> ExistsAsync(string container, string name)
+        public async Task<bool> ExistsAsync(string container, string name)
         {
-            var url = GetUrl(container, name);
+            var url = await GetBlobUrlAsync(container, name);
 
-            var result = File.Exists(url);
-
-            return Task.FromResult(result);
+            return File.Exists(url);
         }
 
         public void CreateContainer(string container)

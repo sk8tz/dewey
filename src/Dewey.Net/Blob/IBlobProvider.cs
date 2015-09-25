@@ -14,11 +14,17 @@ namespace Dewey.Net.Blob
         void Upload(string container, string name, Stream stream, bool overwrite = true);
         Task UploadAsync(string container, string name, Stream stream, bool overwrite = true);
 
-        string GetUrl(string container, string name);
-        Task<string> GetUrlAsync(string container, string name);
+        string GetContainerUrl(string container);
+        Task<string> GetContainerUrlAsync(string container);
 
-        Uri GetUri(string container, string name);
-        Task<Uri> GetUriAsync(string container, string name);
+        string GetBlobUrl(string container, string name);
+        Task<string> GetBlobUrlAsync(string container, string name);
+
+        Uri GetContainerUri(string container);
+        Task<Uri> GetContainerUriAsync(string container);
+
+        Uri GetBlobUri(string container, string name);
+        Task<Uri> GetBlobUriAsync(string container, string name);
 
         bool Exists(string container, string name);
         Task<bool> ExistsAsync(string container, string name);

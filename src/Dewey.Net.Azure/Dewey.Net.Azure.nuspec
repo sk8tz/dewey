@@ -12,7 +12,7 @@
     <projectUrl>https://github.com/cady-io/dewey</projectUrl>
     <dependencies>
       <group targetFramework="net45">
-        <dependency id="Dewey.Net" version="2.1.0.0" />
+        <dependency id="Dewey.Net" version="2.2.0.0" />
         <dependency id="Microsoft.Azure.KeyVault.Core" version="1.0.0" />
         <dependency id="Microsoft.Data.Edm" version="5.6.4" />
         <dependency id="Microsoft.Data.OData" version="5.6.4" />

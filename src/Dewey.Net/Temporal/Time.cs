@@ -126,14 +126,37 @@ namespace Dewey.Net.Temporal
                 throw new ArgumentNullException("The 'time' parameter cannot be null.");
             }
 
+            time = time.ToLower();
+
             try {
-                TimeSpan timeSpan;
-
-                if (!TimeSpan.TryParse(time, out timeSpan)) {
-                    throw new ArgumentException("Time is not in a valid format.");
+                _dateTime = DateTime.ParseExact(time, "h:mm tt", System.Globalization.CultureInfo.CurrentCulture);
+            } catch {
+                try {
+                    _dateTime = DateTime.ParseExact(time, "hh:mm tt", System.Globalization.CultureInfo.CurrentCulture);
+                } catch {
+                    try {
+                        _dateTime = DateTime.ParseExact(time, "H:mm", System.Globalization.CultureInfo.CurrentCulture);
+                    } catch {
+                        try {
+                        _dateTime = DateTime.ParseExact(time, "HH:mm", System.Globalization.CultureInfo.CurrentCulture);
+                    } catch {
+                        throw new ArgumentException("Time is not in a valid format.");
+                        }
+                    }
                 }
+            }
+        }
 
-                _dateTime = _dateTime.Date + timeSpan;
+        public Time(string time, string format)
+        {
+            if (time.IsEmpty()) {
+                throw new ArgumentNullException("The 'time' parameter cannot be null.");
+            }
+
+            time = time.ToLower();
+
+            try {
+                _dateTime = DateTime.ParseExact(time, format, System.Globalization.CultureInfo.CurrentCulture);
             } catch {
                 throw new ArgumentException("Time is not in a valid format.");
             }

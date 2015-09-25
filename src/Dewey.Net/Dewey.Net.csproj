@@ -76,7 +76,9 @@
     <Compile Include="Types\StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Dewey.Net.nuspec" />
+    <None Include="Dewey.Net.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

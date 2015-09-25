@@ -86,32 +86,56 @@ namespace Dewey.Net.Azure.Blob
             await blob.UploadFromStreamAsync(stream);
         }
 
-        public string GetUrl(string container, string name)
+        public string GetBlobUrl(string container, string name)
         {
-            return GetUri(container, name).AbsolutePath;
+            return GetBlobUri(container, name).AbsolutePath;
         }
 
-        public async Task<string> GetUrlAsync(string container, string name)
+        public async Task<string> GetBlobUrlAsync(string container, string name)
         {
-            var result = await GetUriAsync(container, name);
+            var result = await GetBlobUriAsync(container, name);
 
             return result.AbsolutePath;
         }
 
-        public Uri GetUri(string container, string name)
+        public Uri GetBlobUri(string container, string name)
         {
             var blob = GetBlob(container, name);
 
             return blob.StorageUri.PrimaryUri;
         }
 
-        public Task<Uri> GetUriAsync(string container, string name)
+        public Task<Uri> GetBlobUriAsync(string container, string name)
         {
             var blob = GetBlob(container, name);
 
             var result = blob.StorageUri.PrimaryUri;
 
             return Task.FromResult(result);
+        }
+
+        public string GetContainerUrl(string container)
+        {
+            return GetContainerUri(container)?.AbsolutePath;
+        }
+
+        public async Task<string> GetContainerUrlAsync(string container)
+        {
+            var result = await GetContainerUriAsync(container);
+
+            return result?.AbsolutePath;
+        }
+
+        public Uri GetContainerUri(string container)
+        {
+            return GetContainer(container)?.StorageUri?.PrimaryUri;
+        }
+
+        public Task<Uri> GetContainerUriAsync(string container)
+        {
+            var result = GetContainer(container);
+            
+            return Task.FromResult(result?.StorageUri?.PrimaryUri);
         }
 
         public bool Exists(string container, string name)
