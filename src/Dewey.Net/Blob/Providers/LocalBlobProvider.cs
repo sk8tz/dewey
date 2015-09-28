@@ -105,6 +105,8 @@ namespace Dewey.Net.Blob.Providers
                 }
             }
 
+            CreateContainer(container);
+
             var uri = GetBlobUri(container, name);
 
             using (var client = new WebClient()) {
@@ -121,6 +123,8 @@ namespace Dewey.Net.Blob.Providers
                     return;
                 }
             }
+
+            await CreateContainerAsync(container);
 
             var uri = GetBlobUri(container, name);
 
@@ -162,7 +166,7 @@ namespace Dewey.Net.Blob.Providers
             var path = Path.Combine(BlobDirectory, container);
 
             if (!Directory.Exists(path)) {
-                File.Create(path);
+                Directory.CreateDirectory(path);
             }
         }
 
@@ -171,7 +175,7 @@ namespace Dewey.Net.Blob.Providers
             var path = Path.Combine(BlobDirectory, container);
 
             if (!Directory.Exists(path)) {
-                File.Create(path);
+                Directory.CreateDirectory(path);
             }
 
             return Task.FromResult(true);

@@ -70,6 +70,8 @@ namespace Dewey.Net.Azure.Blob
                 return;
             }
 
+            CreateContainer(container);
+
             // Create or overwrite the blob with contents from local file.
             blob.UploadFromStream(stream);
         }
@@ -81,6 +83,8 @@ namespace Dewey.Net.Azure.Blob
             if (!overwrite && blob.Exists()) {
                 return;
             }
+
+            await CreateContainerAsync(container);
 
             // Create or overwrite the blob with contents from local file.
             await blob.UploadFromStreamAsync(stream);

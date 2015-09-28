@@ -7,7 +7,8 @@
 
         public DateRange()
         {
-
+            Start = new Date();
+            End = new Date();
         }
 
         public DateRange(Date start, Date end)

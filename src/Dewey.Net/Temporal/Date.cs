@@ -110,6 +110,11 @@ namespace Dewey.Net.Temporal
             }
         }
 
+        public Date(DateTime dateTime)
+        {
+            _dateTime = dateTime.StripTime();
+        }
+
         public Date AddYears(int years)
         {
             _dateTime.AddYears(years);
@@ -149,6 +154,11 @@ namespace Dewey.Net.Temporal
         public static implicit operator Date(string date)
         {
             return new Date(date);
+        }
+
+        public static implicit operator Date(DateTime dateTime)
+        {
+            return new Date(dateTime);
         }
     }
 }
