@@ -3,7 +3,7 @@ using System;
 
 namespace Dewey.Net.Temporal
 {
-    public class Date
+    public class Date : IComparable
     {
         private DateTime _dateTime = DateTime.UtcNow.StripTime();
 
@@ -149,6 +149,13 @@ namespace Dewey.Net.Temporal
         public string ToString(string format)
         {
             return _dateTime.ToString(format);
+        }
+
+        public int CompareTo(object obj)
+        {
+            DateTime dateTime = (DateTime) obj;
+
+            return DateTime.Compare(_dateTime, dateTime);
         }
 
         public static implicit operator Date(string date)
