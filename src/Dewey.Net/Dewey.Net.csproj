@@ -60,6 +60,7 @@
     <Compile Include="i18n\Countries.cs" />
     <Compile Include="i18n\Country.cs" />
     <Compile Include="i18n\Locality.cs" />
+    <Compile Include="Json\JsonUtils.cs" />
     <Compile Include="Linq\LinqExtensions.cs" />
     <Compile Include="List\ListExtensions.cs" />
     <Compile Include="Log\Logger.cs" />

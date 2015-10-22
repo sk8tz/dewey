@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Dewey.Net.Generic
@@ -18,6 +19,12 @@ namespace Dewey.Net.Generic
         public static bool IsNotEmpty<T>(this IEnumerable<T> value)
         {
             return !value.IsEmpty();
+        }
+        public static IEnumerable<TSource> DistinctBy<TSource, TKey>(this IEnumerable<TSource> source, Func<TSource, TKey> selector)
+        {
+            var keys = new HashSet<TKey>();
+
+            return source.Where(element => keys.Add(selector(element)));
         }
     }
 }
