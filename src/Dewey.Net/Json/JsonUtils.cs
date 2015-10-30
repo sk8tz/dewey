@@ -1,65 +1,97 @@
 ﻿using Newtonsoft.Json;
-using System.IO;
-using System.Net;
-using System.Text;
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 namespace Dewey.Net.Json
 {
     public class JsonUtils
     {
-        public static T Get<T>(string url)
+        public static string BaseAddress { get; set; }
+
+        public static async Task<JsonResult<T>> Get<T>(string url)
         {
-            var request = (HttpWebRequest)WebRequest.Create(url);
+            using (var client = new HttpClient()) {
+                client.BaseAddress = new Uri(BaseAddress);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-            try {
-                var response = request.GetResponse();
+                var response = await client.GetAsync(url).ConfigureAwait(false);
 
-                using (var responseStream = response.GetResponseStream()) {
-                    var reader = new StreamReader(responseStream, Encoding.UTF8);
+                if (response.IsSuccessStatusCode) {
+                    var result = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
-                    var result = reader.ReadToEnd();
-
-                    return JsonConvert.DeserializeObject<T>(result);
-                }
-            } catch (WebException ex) {
-                var errorResponse = ex.Response;
-
-                using (var responseStream = errorResponse.GetResponseStream()) {
-                    var reader = new StreamReader(responseStream, Encoding.GetEncoding("utf-8"));
-
-                    var errorText = reader.ReadToEnd();
-
-                    // Log Exception
+                    return new JsonResult<T>
+                    {
+                        StatusCode = response.StatusCode,
+                        Result = JsonConvert.DeserializeObject<T>(result)
+                    };
                 }
 
-                throw;
+                return new JsonResult<T>
+                {
+                    StatusCode = response.StatusCode,
+                };
             }
         }
 
-        public static void Post(string url, string jsonContent)
+        public static async Task<JsonResult<T>> Delete<T>(string url)
         {
-            var request = (HttpWebRequest)WebRequest.Create(url);
+            using (var client = new HttpClient()) {
+                client.BaseAddress = new Uri(BaseAddress);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-            request.Method = "POST";
+                var response = await client.DeleteAsync(url);
 
-            var encoding = new UTF8Encoding();
-            var byteArray = encoding.GetBytes(jsonContent);
+                if (response.IsSuccessStatusCode) {
+                    var result = await response.Content.ReadAsStringAsync();
 
-            request.ContentLength = byteArray.Length;
-            request.ContentType = @"application/json";
-
-            using (var dataStream = request.GetRequestStream()) {
-                dataStream.Write(byteArray, 0, byteArray.Length);
-            }
-
-            var length = 0L;
-
-            try {
-                using (var response = (HttpWebResponse)request.GetResponse()) {
-                    length = response.ContentLength;
+                    return new JsonResult<T>
+                    {
+                        StatusCode = response.StatusCode,
+                        Result = JsonConvert.DeserializeObject<T>(result)
+                    };
                 }
-            } catch (WebException ex) {
-                // Log exception and throw as for GET example above
+
+                return new JsonResult<T>
+                {
+                    StatusCode = response.StatusCode,
+                };
+            }
+        }
+
+        public static async Task<JsonResult<T>> Post<T>(string url, T data)
+        {
+            return await Post<T, T>(url, data);
+        }
+
+        public static async Task<JsonResult<U>> Post<T, U>(string url, T data)
+        {
+            var serialized = JsonConvert.SerializeObject(data);
+
+            using (var client = new HttpClient()) {
+                client.BaseAddress = new Uri(BaseAddress);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                var response = await client.PostAsync(url, new StringContent(serialized));
+
+                if (response.IsSuccessStatusCode) {
+                    var result = await response.Content.ReadAsStringAsync();
+
+                    return new JsonResult<U>
+                    {
+                        StatusCode = response.StatusCode,
+                        Result = JsonConvert.DeserializeObject<U>(result)
+                    };
+                }
+
+                return new JsonResult<U>
+                {
+                    StatusCode = response.StatusCode,
+                };
             }
         }
     }

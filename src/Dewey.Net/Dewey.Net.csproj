@@ -43,6 +43,7 @@
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Runtime.Caching" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +61,7 @@
     <Compile Include="i18n\Countries.cs" />
     <Compile Include="i18n\Country.cs" />
     <Compile Include="i18n\Locality.cs" />
+    <Compile Include="Json\JsonResult.cs" />
     <Compile Include="Json\JsonUtils.cs" />
     <Compile Include="Linq\LinqExtensions.cs" />
     <Compile Include="List\ListExtensions.cs" />

@@ -5,7 +5,7 @@ using System.Web.Mvc;
 
 namespace Dewey.Net.Mvc.Json
 {
-    public class JsonNetResult : JsonResult
+    public class JsonNetResult<T> : JsonResult
     {
         private readonly HttpStatusCode _statusCode = HttpStatusCode.OK;
 
@@ -14,7 +14,7 @@ namespace Dewey.Net.Mvc.Json
 
         }
 
-        public JsonNetResult(object data)
+        public JsonNetResult(T data)
         {
             Data = data;
         }
@@ -24,7 +24,7 @@ namespace Dewey.Net.Mvc.Json
             _statusCode = statusCode;
         }
 
-        public JsonNetResult(object data, HttpStatusCode statusCode)
+        public JsonNetResult(T data, HttpStatusCode statusCode)
         {
             Data = data;
             _statusCode = statusCode;
