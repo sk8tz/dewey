@@ -5,43 +5,9 @@ namespace Dewey.Net.Temporal
 {
     public class Date : IComparable
     {
-        private DateTime _dateTime = DateTime.UtcNow.StripTime();
-
-        public int Year
-        {
-            get
-            {
-                return _dateTime.Year;
-            }
-            set
-            {
-                _dateTime = new DateTime(value, _dateTime.Month, _dateTime.Day);
-            }
-        }
-
-        public int Month
-        {
-            get
-            {
-                return _dateTime.Month;
-            }
-            set
-            {
-                _dateTime = new DateTime(_dateTime.Year, value, _dateTime.Day);
-            }
-        }
-
-        public int Day
-        {
-            get
-            {
-                return _dateTime.Day;
-            }
-            set
-            {
-                _dateTime = new DateTime(_dateTime.Year, _dateTime.Month, value);
-            }
-        }
+        public int Month { get; set; }
+        public int Day { get; set; }
+        public int Year { get; set; }
 
         public Date()
         {
@@ -61,9 +27,9 @@ namespace Dewey.Net.Temporal
                 throw new ArgumentException("Second cannot be smaller than 1.");
             }
 
-            _dateTime = new DateTime(year, month, day);
-
-            _dateTime.StripTime();
+            Year = year;
+            Month = month;
+            Day = day;
         }
 
         public Date(string date)
@@ -74,17 +40,19 @@ namespace Dewey.Net.Temporal
 
             date = date.ToLower();
 
+            DateTime dateTime;
+
             try {
-                _dateTime = DateTime.ParseExact(date, "yyyy/MM/dd", System.Globalization.CultureInfo.CurrentCulture);
+                dateTime = DateTime.ParseExact(date, "yyyy/MM/dd", System.Globalization.CultureInfo.CurrentCulture);
             } catch {
                 try {
-                    _dateTime = DateTime.ParseExact(date, "dd/MM/yyyy", System.Globalization.CultureInfo.CurrentCulture);
+                    dateTime = DateTime.ParseExact(date, "dd/MM/yyyy", System.Globalization.CultureInfo.CurrentCulture);
                 } catch {
                     try {
-                        _dateTime = DateTime.ParseExact(date, "yyyy/MM/dd H:mm:ss", System.Globalization.CultureInfo.CurrentCulture);
+                        dateTime = DateTime.ParseExact(date, "yyyy/MM/dd H:mm:ss", System.Globalization.CultureInfo.CurrentCulture);
                     } catch {
                         try {
-                            _dateTime = DateTime.ParseExact(date, "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.CurrentCulture);
+                            dateTime = DateTime.ParseExact(date, "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.CurrentCulture);
                         } catch {
                             throw new ArgumentException("Date is not in a valid format.");
                         }
@@ -92,7 +60,9 @@ namespace Dewey.Net.Temporal
                 }
             }
 
-            _dateTime.StripTime();
+            Day = dateTime.Day;
+            Month = dateTime.Month;
+            Year = dateTime.Year;
         }
 
         public Date(string date, string format)
@@ -103,59 +73,80 @@ namespace Dewey.Net.Temporal
 
             date = date.ToLower();
 
+            DateTime dateTime;
+
             try {
-                _dateTime = DateTime.ParseExact(date, format, System.Globalization.CultureInfo.CurrentCulture);
+                dateTime = DateTime.ParseExact(date, format, System.Globalization.CultureInfo.CurrentCulture);
             } catch {
                 throw new ArgumentException("Date is not in a valid format.");
             }
+
+            Day = dateTime.Day;
+            Month = dateTime.Month;
+            Year = dateTime.Year;
         }
 
         public Date(DateTime dateTime)
         {
-            _dateTime = dateTime.StripTime();
+            Day = dateTime.Day;
+            Month = dateTime.Month;
+            Year = dateTime.Year;
         }
 
         public Date AddYears(int years)
         {
-            _dateTime.AddYears(years);
+            var dateTime = ToDateTime().AddYears(years);
+
+            Year = dateTime.Year;
+            Month = dateTime.Month;
+            Day = dateTime.Day;
 
             return this;
         }
 
         public Date AddMonths(int months)
         {
-            _dateTime.AddMonths(months);
+            var dateTime = ToDateTime().AddMonths(months);
+
+            Year = dateTime.Year;
+            Month = dateTime.Month;
+            Day = dateTime.Day;
 
             return this;
         }
 
         public Date AddDays(int days)
         {
-            _dateTime.AddDays(days);
+            var dateTime = ToDateTime().AddDays(days);
+
+            Year = dateTime.Year;
+            Month = dateTime.Month;
+            Day = dateTime.Day;
 
             return this;
         }
 
         public DateTime ToDateTime()
         {
-            return _dateTime;
+            return new DateTime(Year, Month, Day, 0, 0, 0);
         }
 
         public override string ToString()
         {
-            return _dateTime.ToString("yyyy/MM/dd");
+            return ToDateTime().ToString("yyyy/MM/dd");
         }
 
         public string ToString(string format)
         {
-            return _dateTime.ToString(format);
+
+            return ToDateTime().ToString(format);
         }
 
         public int CompareTo(object obj)
         {
             DateTime dateTime = (DateTime) obj;
 
-            return DateTime.Compare(_dateTime, dateTime);
+            return DateTime.Compare(ToDateTime(), dateTime);
         }
 
         public static implicit operator Date(string date)
