@@ -8,6 +8,10 @@ namespace Dewey.Net.Types
     {
         public static string Chomp(this string value, int len)
         {
+            if (value == null) {
+                return value;
+            }
+            
             if (value.Length <= len) {
                 return value;
             }
