@@ -11,6 +11,9 @@ namespace Dewey.Net.Temporal
 
         public Date()
         {
+            Month = 1;
+            Day = 1;
+            Year = 1;
         }
 
         public Date(int year, int month, int day)
