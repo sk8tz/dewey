@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dewey.Net.Types;
+using System;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
@@ -11,7 +12,9 @@ namespace Dewey.Net.Blob.Providers
 
         public LocalBlobProvider()
         {
-            BlobDirectory = Path.GetTempPath();
+            if (BlobDirectory.IsEmpty()) {
+                BlobDirectory = Path.GetTempPath();
+            }
         }
 
         public LocalBlobProvider(string blobDirectory)
@@ -187,6 +190,26 @@ namespace Dewey.Net.Blob.Providers
                 stream.CopyTo(memoryStream);
 
                 return memoryStream.ToArray();
+            }
+        }
+
+        public void DeleteBlob(string container, string name)
+        {
+            var path = Path.Combine(BlobDirectory, container);
+
+            path = Path.Combine(path, name);
+
+            if (File.Exists(path)) {
+                File.Delete(path);
+            }
+        }
+
+        public void DeleteContainer(string container)
+        {
+            var path = Path.Combine(BlobDirectory, container);
+
+            if (Directory.Exists(path)) {
+                Directory.Delete(path, true);
             }
         }
     }

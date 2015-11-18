@@ -31,5 +31,9 @@ namespace Dewey.Net.Blob
 
         void CreateContainer(string container);
         Task CreateContainerAsync(string container);
+
+        void DeleteBlob(string container, string name);
+
+        void DeleteContainer(string container);
     }
 }
