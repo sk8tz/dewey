@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Dewey.Net.Azure")]
-[assembly: AssemblyDescription("A ceollection of .Net utilities for Azure")]
+[assembly: AssemblyDescription("A collection of .Net utilities for Azure")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Cady.IO")]
 [assembly: AssemblyProduct("Dewey.Net.Azure")]

@@ -8,6 +8,10 @@ namespace Dewey.Net.Redis
     {
         public static string ConnectionString { get; set; } = null;
 
+        private static IDatabase _cache => lazyConnection.Value.GetDatabase();
+
+        public static int SlidingExpirationMinutes = 30;
+
         private static Lazy<ConnectionMultiplexer> lazyConnection = new Lazy<ConnectionMultiplexer>(() =>
         {
             if (ConnectionString == null) {
@@ -17,11 +21,7 @@ namespace Dewey.Net.Redis
             return ConnectionMultiplexer.Connect(ConnectionString);
         });
 
-        private static IDatabase _cache => lazyConnection.Value.GetDatabase();
-
-        public static int SlidingExpirationMinutes = 30;
-
-        private static TimeSpan TimeToExpire { get { return new TimeSpan(0, SlidingExpirationMinutes, 0); } }
+        private static TimeSpan TimeToExpire => new TimeSpan(0, SlidingExpirationMinutes, 0);
 
         private static string GetCacheKey<T>(string key)
         {
