@@ -4,7 +4,7 @@ using System;
 
 namespace Dewey.Net.Redis
 {
-    public static class RedisCache
+    public static class Cache
     {
         public static string ConnectionString { get; set; } = null;
 
@@ -21,6 +21,8 @@ namespace Dewey.Net.Redis
 
         public static int SlidingExpirationMinutes = 30;
 
+        private static TimeSpan TimeToExpire { get { return new TimeSpan(0, SlidingExpirationMinutes, 0); } }
+
         private static string GetCacheKey<T>(string key)
         {
             string typeName = typeof(T).Name;
@@ -36,7 +38,7 @@ namespace Dewey.Net.Redis
         {
             key = GetCacheKey<T>(key);
 
-            _cache.StringSet(key, JsonConvert.SerializeObject(value));
+            _cache.StringSet(key, JsonConvert.SerializeObject(value), TimeToExpire);
         }
 
         public static void Remove<T>(string key)
@@ -70,6 +72,7 @@ namespace Dewey.Net.Redis
                 }
 
                 value = JsonConvert.DeserializeObject<T>(_cache.StringGet(key));
+                _cache.KeyExpire(key, TimeToExpire);
 
                 if (value != null) {
                     return true;
