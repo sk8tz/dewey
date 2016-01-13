@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Dewey.Net.Azure")]
-[assembly: AssemblyDescription("A collection of .Net utilities for Azure")]
+[assembly: AssemblyTitle("Dewey.Net.Redis")]
+[assembly: AssemblyDescription("A collection of .Net Utilities for Redis")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Axial Commerce")]
-[assembly: AssemblyProduct("Dewey.Net.Azure")]
+[assembly: AssemblyProduct("Dewey.Net.Redis")]
 [assembly: AssemblyCopyright("Copyright © Axial Commerce")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("cf7ad166-37df-470b-a867-82d24d37422f")]
+[assembly: Guid("570c218e-e872-497a-b90f-f1f6dd27fe1e")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("3.0.0.0")]
-[assembly: AssemblyFileVersion("3.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
