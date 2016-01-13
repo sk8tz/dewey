@@ -212,5 +212,19 @@ namespace Dewey.Net.Blob.Providers
                 Directory.Delete(path, true);
             }
         }
+
+        public Task DeleteBlobAsync(string container, string name)
+        {
+            DeleteBlob(container, name);
+
+            return Task.FromResult(true);
+        }
+
+        public Task DeleteContainerAsync(string container)
+        {
+            DeleteContainer(container);
+
+            return Task.FromResult(true);
+        }
     }
 }

@@ -1,27 +1,27 @@
 <?xml version="1.0"?>
 <package >
-  <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <description>$description$</description>
-    <authors>Cady.IO</authors>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright>Copyright © Cady.IO</copyright>
-    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
-    <projectUrl>https://github.com/cady-io/dewey</projectUrl>
-    <dependencies>
-      <group targetFramework="net45">
-        <dependency id="Dewey.Net" version="2.4.0.0" />
-        <dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
-        <dependency id="Microsoft.AspNet.Razor" version="3.2.3" />
-        <dependency id="Microsoft.AspNet.WebPages" version="3.2.3"  />
-        <dependency id="Microsoft.Bcl" version="1.1.10" />
-        <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
-        <dependency id="Microsoft.Net.Http" version="2.2.29" />
-        <dependency id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
-        <dependency id="Newtonsoft.Json" version="7.0.1" />
-      </group>
-    </dependencies>
-  </metadata>
+    <metadata>
+        <id>$id$</id>
+        <version>$version$</version>
+        <title>$title$</title>
+        <description>$description$</description>
+        <authors>Axial Commerce</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <copyright>Copyright © Axial Commerce</copyright>
+        <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+        <projectUrl>https://github.com/axial/dewey</projectUrl>
+        <dependencies>
+            <group targetFramework="net45">
+                <dependency id="Dewey.Net" version="3.0.0.0" />
+                <dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
+                <dependency id="Microsoft.AspNet.Razor" version="3.2.3" />
+                <dependency id="Microsoft.AspNet.WebPages" version="3.2.3"  />
+                <dependency id="Microsoft.Bcl" version="1.1.10" />
+                <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+                <dependency id="Microsoft.Net.Http" version="2.2.29" />
+                <dependency id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
+                <dependency id="Newtonsoft.Json" version="8.0.2" />
+            </group>
+        </dependencies>
+    </metadata>
 </package>

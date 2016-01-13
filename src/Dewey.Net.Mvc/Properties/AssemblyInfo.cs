@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Dewey.Net.Mvc")]
 [assembly: AssemblyDescription("A ceollection of .Net utilities for Asp.Net Mvc")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Cady.IO")]
+[assembly: AssemblyCompany("Axial Commerce")]
 [assembly: AssemblyProduct("Dewey.Net.Mvc")]
-[assembly: AssemblyCopyright("Copyright © Cady.IO 2015")]
+[assembly: AssemblyCopyright("Copyright © Axial Commerce")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.5.1.0")]
-[assembly: AssemblyFileVersion("2.5.1.0")]
+[assembly: AssemblyVersion("3.0.0.0")]
+[assembly: AssemblyFileVersion("3.0.0.0")]

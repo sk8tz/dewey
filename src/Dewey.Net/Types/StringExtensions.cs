@@ -18,6 +18,23 @@ namespace Dewey.Net.Types
 
             return value.Substring(0, value.Length - len);
         }
+        public static Guid? ToNullableGuid(this string guid)
+        {
+            if (guid.IsEmpty()) {
+                return null;
+            }
+
+            return new Guid(guid);
+        }
+
+        public static Guid ToGuid(this string guid)
+        {
+            if (guid.IsEmpty()) {
+                throw new ArgumentNullException(nameof(guid));
+            }
+
+            return new Guid(guid);
+        }
 
         public static string Digits(this string value)
         {

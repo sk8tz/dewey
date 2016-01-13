@@ -205,5 +205,33 @@ namespace Dewey.Net.Azure.Blob
         {
             return GetContainer(container).GetBlockBlobReference(name);
         }
+
+        public void DeleteBlob(string container, string name)
+        {
+            var blob = GetBlob(container, name);
+
+            blob.Delete();
+        }
+
+        public async Task DeleteBlobAsync(string container, string name)
+        {
+            var blob = GetBlob(container, name);
+
+            await blob.DeleteAsync();
+        }
+
+        public void DeleteContainer(string container)
+        {
+            var _container = GetContainer(container);
+
+            _container.Delete();
+        }
+
+        public async Task DeleteContainerAsync(string container)
+        {
+            var _container = GetContainer(container);
+
+            await _container.DeleteAsync();
+        }
     }
 }
