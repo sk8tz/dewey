@@ -113,6 +113,24 @@ namespace Dewey.Net.Security
 
             return BitConverter.ToString(digest).Replace("-", "").ToLower();
         }
+        
+        /// <summary>
+        /// Generates a cryptographically secure random number of the specified 
+        /// length. 
+        /// </summary>
+        /// <param name="length">The length, in bytes, of the secure random number
+        /// generated</param>
+        /// <returns>Returns the secure random number as a base 64 encoded string.</returns>
+        public static string GenerateSecureRandomString(int length = 24)
+        {
+            var bytes = new byte[length];
+
+            using (var rng = new RNGCryptoServiceProvider()) {
+                rng.GetBytes(bytes);
+            }
+
+            return Convert.ToBase64String(bytes);
+        }
 
         #region Copyright notice for hashing code
 
