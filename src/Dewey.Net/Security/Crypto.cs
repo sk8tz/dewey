@@ -14,6 +14,11 @@ namespace Dewey.Net.Security
 
         public static string Encrypt(string plaintext)
         {
+            return Encrypt(plaintext, Key, SaltBytes);
+        }
+
+        private static string Encrypt(string plaintext, string key, byte[] saltBytes)
+        {
             if (plaintext == null)
                 return "";
 
@@ -21,10 +26,10 @@ namespace Dewey.Net.Security
             RijndaelManaged aes = null;
 
             try {
-                var key = new Rfc2898DeriveBytes(Key, SaltBytes);
+                var derivedKey = new Rfc2898DeriveBytes(key, saltBytes);
 
                 aes = new RijndaelManaged();
-                aes.Key = key.GetBytes(aes.KeySize / 8);
+                aes.Key = derivedKey.GetBytes(aes.KeySize / 8);
 
                 var encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
 
@@ -52,6 +57,11 @@ namespace Dewey.Net.Security
 
         public static string Decrypt(string cipher)
         {
+            return Decrypt(cipher, Key, SaltBytes);
+        }
+
+        private static string Decrypt(string cipher, string key, byte[] saltBytes)
+        {
             if (cipher == null || cipher.IsEmpty()) {
                 return "";
             }
@@ -60,12 +70,12 @@ namespace Dewey.Net.Security
             RijndaelManaged aesAlg = null;
 
             try {
-                var key = new Rfc2898DeriveBytes(Key, SaltBytes);
+                var derivedKey = new Rfc2898DeriveBytes(key, saltBytes);
 
                 byte[] bytes = Convert.FromBase64String(cipher);
                 using (MemoryStream msDecrypt = new MemoryStream(bytes)) {
                     aesAlg = new RijndaelManaged();
-                    aesAlg.Key = key.GetBytes(aesAlg.KeySize / 8);
+                    aesAlg.Key = derivedKey.GetBytes(aesAlg.KeySize / 8);
 
                     aesAlg.IV = ReadByteArray(msDecrypt);
 
@@ -89,8 +99,10 @@ namespace Dewey.Net.Security
 
         public static string Rekey(string cipher, string newKey, string newSalt)
         {
-            string plaintext = Decrypt(cipher);
+            byte[] saltBytes = Encoding.ASCII.GetBytes(newSalt);
+            string plaintext = Decrypt(cipher, newKey, saltBytes);
 
+            return Encrypt(plaintext, newKey, saltBytes);
         }
 
         private static byte[] ReadByteArray(Stream s)
