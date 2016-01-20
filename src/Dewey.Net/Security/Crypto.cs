@@ -21,8 +21,7 @@ namespace Dewey.Net.Security
             RijndaelManaged aes = null;
 
             try {
-                var key = new Rfc2898DeriveBytes("Y3B4vXwMbpTLQXEeNBSSL3kT8BBK9t6RGdfPMCbWbQmgzLKCBPJBLdNEfj62CWgxjAxuYJ663wqGyLV4UVz3bv6hZRwMh6hVc9wXUV6S6ty5EfKZZ4rrCnQmY9zN6Xn3",
-                    Encoding.ASCII.GetBytes("uTxnrhvB4a3ZHKfr"));
+                var key = new Rfc2898DeriveBytes(Key, SaltBytes);
 
                 aes = new RijndaelManaged();
                 aes.Key = key.GetBytes(aes.KeySize / 8);
@@ -86,6 +85,12 @@ namespace Dewey.Net.Security
             }
 
             return plaintext;
+        }
+
+        public static string Rekey(string cipher, string newKey, string newSalt)
+        {
+            string plaintext = Decrypt(cipher);
+
         }
 
         private static byte[] ReadByteArray(Stream s)
