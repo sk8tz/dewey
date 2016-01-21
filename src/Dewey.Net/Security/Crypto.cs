@@ -100,7 +100,7 @@ namespace Dewey.Net.Security
         public static string Rekey(string cipher, string newKey, string newSalt)
         {
             byte[] saltBytes = Encoding.ASCII.GetBytes(newSalt);
-            string plaintext = Decrypt(cipher, newKey, saltBytes);
+            string plaintext = Decrypt(cipher);
 
             return Encrypt(plaintext, newKey, saltBytes);
         }
