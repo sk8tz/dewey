@@ -57,6 +57,7 @@
     <Compile Include="Dynamic\DynamicExtensions.cs" />
     <Compile Include="Dynamic\DynamicInternalDictionary.cs" />
     <Compile Include="Enums\EnumExtensions.cs" />
+    <Compile Include="Exceptions\ExceptionExtensions.cs" />
     <Compile Include="Exceptions\UniqueException.cs" />
     <Compile Include="Generic\GenericExtensions.cs" />
     <Compile Include="i18n\Countries.cs" />
