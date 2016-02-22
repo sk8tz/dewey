@@ -1,6 +1,9 @@
 ﻿using Newtonsoft.Json;
 using StackExchange.Redis;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Dewey.Net.Redis
 {
@@ -9,6 +12,7 @@ namespace Dewey.Net.Redis
         public static string ConnectionString { get; set; } = null;
 
         private static IDatabase _cache => lazyConnection.Value.GetDatabase();
+        private static IServer _server => lazyConnection.Value.GetServer(ConnectionString);
 
         public static int SlidingExpirationMinutes = 30;
 
@@ -86,6 +90,20 @@ namespace Dewey.Net.Redis
 
                 return false;
             }
+        }
+
+        public async static Task FlushAccountKeys(string accountId)
+        {
+            var keys = _server.Keys(pattern: $"*{accountId}*").ToArray();
+
+            await _cache.KeyDeleteAsync(keys, CommandFlags.FireAndForget);
+        }
+
+        public async static Task FlushAccountKeysbyType(string accountId, string type)
+        {
+            var keys = _server.Keys(pattern: $"{type}-{accountId}*").ToArray();
+
+            await _cache.KeyDeleteAsync(keys, CommandFlags.FireAndForget);
         }
     }
 }
