@@ -15,7 +15,7 @@ namespace Dewey.Net.Redis
         private static Lazy<ConnectionMultiplexer> lazyConnection = new Lazy<ConnectionMultiplexer>(() =>
         {
             if (ConnectionString == null) {
-                throw new ArgumentNullException("A connection string must be set!");
+                throw new ArgumentNullException("A connection string must be set.");
             }
 
             return ConnectionMultiplexer.Connect(ConnectionString);
@@ -23,7 +23,7 @@ namespace Dewey.Net.Redis
 
         private static TimeSpan TimeToExpire => new TimeSpan(0, SlidingExpirationMinutes, 0);
 
-        private static string GetCacheKey<T>(string key)
+        private static string GetCacheKey<T>(string key, string accountId)
         {
             string typeName = typeof(T).Name;
 
@@ -31,19 +31,19 @@ namespace Dewey.Net.Redis
                 return key;
             }
 
-            return string.Format("{0}-{1}", typeName, key);
+            return string.Format($"{accountId}-{typeName}-{key}");
         }
 
-        public static void Set<T>(string key, T value)
+        public static void Set<T>(string key, string accountId, T value)
         {
-            key = GetCacheKey<T>(key);
+            key = GetCacheKey<T>(key, accountId);
 
             _cache.StringSet(key, JsonConvert.SerializeObject(value), TimeToExpire);
         }
 
-        public static void Remove<T>(string key)
+        public static void Remove<T>(string key, string accountId)
         {
-            key = GetCacheKey<T>(key);
+            key = GetCacheKey<T>(key, accountId);
 
             _cache.KeyDelete(key);
         }
@@ -53,19 +53,19 @@ namespace Dewey.Net.Redis
             lazyConnection.Value.GetServer(ConnectionString).FlushDatabase();
         }
 
-        public static bool Contains<T>(string key)
+        public static bool Contains<T>(string key, string accountId)
         {
-            key = GetCacheKey<T>(key);
+            key = GetCacheKey<T>(key, accountId);
 
             return _cache.KeyExists(key);
         }
 
-        public static bool Get<T>(string key, out T value)
+        public static bool Get<T>(string key, string accountId, out T value)
         {
             try {
-                key = GetCacheKey<T>(key);
+                key = GetCacheKey<T>(key, accountId);
 
-                if (!Contains<T>(key)) {
+                if (!Contains<T>(key, accountId)) {
                     value = default(T);
 
                     return false;
