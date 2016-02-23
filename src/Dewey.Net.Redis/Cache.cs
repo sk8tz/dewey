@@ -9,6 +9,7 @@ namespace Dewey.Net.Redis
     public static class Cache
     {
         public static string ConnectionString { get; set; } = null;
+        public static bool Admin { get; set; } = false;
 
         private static IDatabase _cache => lazyConnection.Value.GetDatabase();
         private static IServer _server => lazyConnection.Value.GetServer(ConnectionString);
@@ -23,7 +24,7 @@ namespace Dewey.Net.Redis
 
             var configuration = new ConfigurationOptions
             {
-                AllowAdmin = true
+                AllowAdmin = Admin
             };
             configuration.EndPoints.Add(ConnectionString);
 
@@ -99,6 +100,10 @@ namespace Dewey.Net.Redis
 
         public async static Task Flush(string pattern)
         {
+            if (!Admin) {
+                return;
+            }
+
             var keys = _server.Keys(pattern: pattern).ToArray();
 
             await _cache.KeyDeleteAsync(keys, CommandFlags.FireAndForget);
