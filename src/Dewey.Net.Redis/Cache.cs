@@ -91,9 +91,9 @@ namespace Dewey.Net.Redis
             }
         }
 
-        public async static Task FlushKeysPartialMatch(string key)
+        public async static Task Flush(string pattern)
         {
-            var keys = _server.Keys(pattern: $"*{key}*").ToArray();
+            var keys = _server.Keys(pattern: $"*{pattern}*").ToArray();
 
             await _cache.KeyDeleteAsync(keys, CommandFlags.FireAndForget);
         }
