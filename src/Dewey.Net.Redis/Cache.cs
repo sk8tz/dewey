@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using StackExchange.Redis;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -27,7 +26,7 @@ namespace Dewey.Net.Redis
 
         private static TimeSpan TimeToExpire => new TimeSpan(0, SlidingExpirationMinutes, 0);
 
-        private static string GetCacheKey<T>(string key, string accountId)
+        private static string GetCacheKey<T>(string key)
         {
             string typeName = typeof(T).Name;
 
@@ -35,19 +34,19 @@ namespace Dewey.Net.Redis
                 return key;
             }
 
-            return string.Format($"{accountId}-{typeName}-{key}");
+            return string.Format($"{typeName}-{key}");
         }
 
-        public static void Set<T>(string key, string accountId, T value)
+        public static void Set<T>(string key, T value)
         {
-            key = GetCacheKey<T>(key, accountId);
+            key = GetCacheKey<T>(key);
 
             _cache.StringSet(key, JsonConvert.SerializeObject(value), TimeToExpire);
         }
 
-        public static void Remove<T>(string key, string accountId)
+        public static void Remove<T>(string key)
         {
-            key = GetCacheKey<T>(key, accountId);
+            key = GetCacheKey<T>(key);
 
             _cache.KeyDelete(key);
         }
@@ -57,19 +56,19 @@ namespace Dewey.Net.Redis
             lazyConnection.Value.GetServer(ConnectionString).FlushDatabase();
         }
 
-        public static bool Contains<T>(string key, string accountId)
+        public static bool Contains<T>(string key)
         {
-            key = GetCacheKey<T>(key, accountId);
+            key = GetCacheKey<T>(key);
 
             return _cache.KeyExists(key);
         }
 
-        public static bool Get<T>(string key, string accountId, out T value)
+        public static bool Get<T>(string key, out T value)
         {
             try {
-                key = GetCacheKey<T>(key, accountId);
+                key = GetCacheKey<T>(key);
 
-                if (!Contains<T>(key, accountId)) {
+                if (!Contains<T>(key)) {
                     value = default(T);
 
                     return false;
@@ -92,16 +91,9 @@ namespace Dewey.Net.Redis
             }
         }
 
-        public async static Task FlushAccountKeys(string accountId)
+        public async static Task FlushKeysPartialMatch(string key)
         {
-            var keys = _server.Keys(pattern: $"*{accountId}*").ToArray();
-
-            await _cache.KeyDeleteAsync(keys, CommandFlags.FireAndForget);
-        }
-
-        public async static Task FlushAccountKeysbyType(string accountId, string type)
-        {
-            var keys = _server.Keys(pattern: $"{type}-{accountId}*").ToArray();
+            var keys = _server.Keys(pattern: $"*{key}*").ToArray();
 
             await _cache.KeyDeleteAsync(keys, CommandFlags.FireAndForget);
         }
