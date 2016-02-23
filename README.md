@@ -1,2 +1,2 @@
-# Dewey.Net
+# Dewey
 A collection of .Net utilities
