@@ -21,7 +21,13 @@ namespace Dewey.Net.Redis
                 throw new ArgumentNullException("A connection string must be set.");
             }
 
-            return ConnectionMultiplexer.Connect(ConnectionString);
+            var configuration = new ConfigurationOptions
+            {
+                AllowAdmin = true
+            };
+            configuration.EndPoints.Add(ConnectionString);
+
+            return ConnectionMultiplexer.Connect(configuration);
         });
 
         private static TimeSpan TimeToExpire => new TimeSpan(0, SlidingExpirationMinutes, 0);
