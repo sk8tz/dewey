@@ -1,0 +1,34 @@
+﻿{
+    "version": "1.0.2",
+    "description": "A collection of .Net utilities for Azure",
+    "authors": [
+        "Axial Commerce <contact@axialcommerce.com>"
+    ],
+    "tags": [
+        "Utilities",
+        "Extensions",
+        "Azure"
+    ],
+    "projectUrl": "https://github.com/axial/dewey",
+    "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+    "dependencies": {
+        "Dewey": "1.0.2",
+        "WindowsAzure.Storage": "6.2.0",
+        "Microsoft.Azure.KeyVault.Core": "1.0.0",
+        "Microsoft.Data.Edm": "5.7.0",
+        "Microsoft.Data.OData": "5.7.0",
+        "Microsoft.Data.Services.Client": "5.7.0",
+        "Newtonsoft.Json": "8.0.2",
+        "System.Spatial": "5.7.0"
+    },
+    "frameworks": {
+        "net45": { },
+        "net451": { },
+        "net452": { },
+        "net46": { },
+        "dnx45": { },
+        "dnx451": { },
+        "dnx452": { },
+        "dnx46": { }
+    }
+}

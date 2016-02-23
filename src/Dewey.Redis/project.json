@@ -1,0 +1,28 @@
+﻿{
+    "version": "1.0.2",
+    "description": "A collection of .Net utilities for Redis",
+    "authors": [
+        "Axial Commerce <contact@axialcommerce.com>"
+    ],
+    "tags": [
+        "Utilities",
+        "Extensions",
+        "Redis"
+    ],
+    "projectUrl": "https://github.com/axial/dewey",
+    "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+    "dependencies": {
+        "Newtonsoft.Json": "8.0.2",
+        "StackExchange.Redis": "1.0.488"
+    },
+    "frameworks": {
+        "net45": { },
+        "net451": { },
+        "net452": { },
+        "net46": { },
+        "dnx45": { },
+        "dnx451": { },
+        "dnx452": { },
+        "dnx46": { }
+    }
+}
