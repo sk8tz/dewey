@@ -38,6 +38,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dewey.Azure", "Dewey.Azure"
 		docs\dewey-azure\index.rst = docs\dewey-azure\index.rst
 	EndProjectSection
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Dewey.Json", "src\Dewey.Json\Dewey.Json.xproj", "{DE9AEEBA-9715-4AA6-A3EA-FD8ECD4A1AA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dewey.Json", "Dewey.Json", "{F751D046-6079-4498-A865-04E11077D68D}"
+	ProjectSection(SolutionItems) = preProject
+		docs\dewey-json\index.rst = docs\dewey-json\index.rst
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +63,10 @@ Global
 		{9EDF11C9-1069-498C-945C-E36D93E5EE53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EDF11C9-1069-498C-945C-E36D93E5EE53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EDF11C9-1069-498C-945C-E36D93E5EE53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE9AEEBA-9715-4AA6-A3EA-FD8ECD4A1AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9AEEBA-9715-4AA6-A3EA-FD8ECD4A1AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9AEEBA-9715-4AA6-A3EA-FD8ECD4A1AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9AEEBA-9715-4AA6-A3EA-FD8ECD4A1AA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,5 +78,7 @@ Global
 		{802B8DF9-21D9-4B8D-99F0-CE70EDDE1CA1} = {DEE12186-D8A5-462A-A05C-6677FB850009}
 		{0F1AFFB5-E439-4B2F-93C9-282BAC13F696} = {DEE12186-D8A5-462A-A05C-6677FB850009}
 		{29DE50BD-5AD3-48C0-8008-F1605DA4CEC7} = {DEE12186-D8A5-462A-A05C-6677FB850009}
+		{DE9AEEBA-9715-4AA6-A3EA-FD8ECD4A1AA6} = {4F922B63-87AC-4F82-BCD1-10D3DC7ED0F5}
+		{F751D046-6079-4498-A865-04E11077D68D} = {DEE12186-D8A5-462A-A05C-6677FB850009}
 	EndGlobalSection
 EndGlobal
