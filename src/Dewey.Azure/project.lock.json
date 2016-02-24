@@ -3,13 +3,16 @@
   "version": 2,
   "targets": {
     ".NETFramework,Version=v4.5": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -150,6 +153,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -212,13 +233,16 @@
       }
     },
     ".NETFramework,Version=v4.5.1": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -359,6 +383,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -421,13 +463,16 @@
       }
     },
     ".NETFramework,Version=v4.5.2": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -568,6 +613,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -630,13 +693,16 @@
       }
     },
     ".NETFramework,Version=v4.6": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -777,6 +843,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -839,13 +923,16 @@
       }
     },
     "DNX,Version=v4.5": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": "DNX,Version=v4.5",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -986,6 +1073,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -1048,13 +1153,16 @@
       }
     },
     "DNX,Version=v4.5.1": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -1195,6 +1303,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -1257,13 +1383,16 @@
       }
     },
     "DNX,Version=v4.5.2": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": "DNX,Version=v4.5.2",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -1404,6 +1533,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -1466,13 +1613,16 @@
       }
     },
     "DNX,Version=v4.6": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -1613,6 +1763,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -1675,13 +1843,16 @@
       }
     },
     ".NETFramework,Version=v4.5/win7-x86": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -1822,6 +1993,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -1884,13 +2073,16 @@
       }
     },
     ".NETFramework,Version=v4.5/win7-x64": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -2031,6 +2223,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -2093,13 +2303,16 @@
       }
     },
     ".NETFramework,Version=v4.5.1/win7-x86": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -2240,6 +2453,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -2302,13 +2533,16 @@
       }
     },
     ".NETFramework,Version=v4.5.1/win7-x64": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -2449,6 +2683,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -2511,13 +2763,16 @@
       }
     },
     ".NETFramework,Version=v4.5.2/win7-x86": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -2658,6 +2913,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -2720,13 +2993,16 @@
       }
     },
     ".NETFramework,Version=v4.5.2/win7-x64": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -2867,6 +3143,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -2929,13 +3223,16 @@
       }
     },
     ".NETFramework,Version=v4.6/win7-x86": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -3076,6 +3373,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -3138,13 +3453,16 @@
       }
     },
     ".NETFramework,Version=v4.6/win7-x64": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -3285,6 +3603,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -3347,13 +3683,16 @@
       }
     },
     "DNX,Version=v4.5/win7-x86": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": "DNX,Version=v4.5",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -3494,6 +3833,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -3556,13 +3913,16 @@
       }
     },
     "DNX,Version=v4.5/win7-x64": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": "DNX,Version=v4.5",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -3703,6 +4063,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -3765,13 +4143,16 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x86": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -3912,6 +4293,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -3974,13 +4373,16 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x64": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -4121,6 +4523,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -4183,13 +4603,16 @@
       }
     },
     "DNX,Version=v4.5.2/win7-x86": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": "DNX,Version=v4.5.2",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -4330,6 +4753,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -4392,13 +4833,16 @@
       }
     },
     "DNX,Version=v4.5.2/win7-x64": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": "DNX,Version=v4.5.2",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -4539,6 +4983,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -4601,13 +5063,16 @@
       }
     },
     "DNX,Version=v4.6/win7-x86": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -4748,6 +5213,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -4810,13 +5293,16 @@
       }
     },
     "DNX,Version=v4.6/win7-x64": {
-      "Dewey/1.0.3": {
+      "Dewey/1.0.4": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.2",
+          "System.ComponentModel": "4.0.1-beta-23516",
+          "System.ComponentModel.Annotations": "4.0.11-beta-23516"
         },
         "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
           "System.Runtime.Caching"
         ]
       },
@@ -4957,6 +5443,24 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Spatial/5.7.0": {
@@ -5020,7 +5524,7 @@
     }
   },
   "libraries": {
-    "Dewey/1.0.3": {
+    "Dewey/1.0.4": {
       "type": "project",
       "path": "../Dewey/project.json"
     },
@@ -5208,6 +5712,105 @@
         "tools/install.ps1"
       ]
     },
+    "System.ComponentModel/4.0.1-beta-23516": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "PdAC1M7yT9EBtLpXICbOtPDpDjYSlV2RXyQ7AiKyBD7mV1DNTIK7tcM1056GIOlMoJDDdxU5Z3otBeAM8v5PAg==",
+      "files": [
+        "lib/dotnet5.4/System.ComponentModel.dll",
+        "lib/net45/_._",
+        "lib/netcore50/System.ComponentModel.dll",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "ref/dotnet5.1/de/System.ComponentModel.xml",
+        "ref/dotnet5.1/es/System.ComponentModel.xml",
+        "ref/dotnet5.1/fr/System.ComponentModel.xml",
+        "ref/dotnet5.1/it/System.ComponentModel.xml",
+        "ref/dotnet5.1/ja/System.ComponentModel.xml",
+        "ref/dotnet5.1/ko/System.ComponentModel.xml",
+        "ref/dotnet5.1/ru/System.ComponentModel.xml",
+        "ref/dotnet5.1/System.ComponentModel.dll",
+        "ref/dotnet5.1/System.ComponentModel.xml",
+        "ref/dotnet5.1/zh-hans/System.ComponentModel.xml",
+        "ref/dotnet5.1/zh-hant/System.ComponentModel.xml",
+        "ref/net45/_._",
+        "ref/netcore50/de/System.ComponentModel.xml",
+        "ref/netcore50/es/System.ComponentModel.xml",
+        "ref/netcore50/fr/System.ComponentModel.xml",
+        "ref/netcore50/it/System.ComponentModel.xml",
+        "ref/netcore50/ja/System.ComponentModel.xml",
+        "ref/netcore50/ko/System.ComponentModel.xml",
+        "ref/netcore50/ru/System.ComponentModel.xml",
+        "ref/netcore50/System.ComponentModel.dll",
+        "ref/netcore50/System.ComponentModel.xml",
+        "ref/netcore50/zh-hans/System.ComponentModel.xml",
+        "ref/netcore50/zh-hant/System.ComponentModel.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "System.ComponentModel.4.0.1-beta-23516.nupkg",
+        "System.ComponentModel.4.0.1-beta-23516.nupkg.sha512",
+        "System.ComponentModel.nuspec"
+      ]
+    },
+    "System.ComponentModel.Annotations/4.0.11-beta-23516": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "RUe6z5n4ewCvAuvHaE9zd+FRF/rQsX/xsAn9AxYpmPOtZeitmDWQPOTjg8DZcbHmK4lFxMM0pggoz5IoIZII0g==",
+      "files": [
+        "lib/dotnet5.4/System.ComponentModel.Annotations.dll",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.ComponentModel.Annotations.dll",
+        "lib/win8/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/dotnet5.2/de/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.2/es/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.2/fr/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.2/it/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.2/ja/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.2/ko/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.2/ru/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.2/System.ComponentModel.Annotations.dll",
+        "ref/dotnet5.2/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.2/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.2/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.4/de/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.4/es/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.4/fr/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.4/it/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.4/ja/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.4/ko/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.4/ru/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.4/System.ComponentModel.Annotations.dll",
+        "ref/dotnet5.4/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.4/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/dotnet5.4/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/de/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/es/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/fr/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/it/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ja/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ko/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ru/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/System.ComponentModel.Annotations.dll",
+        "ref/netcore50/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/win8/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "System.ComponentModel.Annotations.4.0.11-beta-23516.nupkg",
+        "System.ComponentModel.Annotations.4.0.11-beta-23516.nupkg.sha512",
+        "System.ComponentModel.Annotations.nuspec"
+      ]
+    },
     "System.Spatial/5.7.0": {
       "type": "package",
       "sha512": "JHcy5NeYHzX6+AiUZcu+yB0Wc+foNk/37YmeMJTXOQ+fVbipfBKLz2y8njpjhi//1gJS/fAQhcS6KHNLDtwjcQ==",
@@ -5282,7 +5885,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Dewey >= 1.0.3",
+      "Dewey >= 1.0.4",
       "WindowsAzure.Storage >= 6.2.0",
       "Microsoft.Azure.KeyVault.Core >= 1.0.0",
       "Microsoft.Data.Edm >= 5.7.0",
