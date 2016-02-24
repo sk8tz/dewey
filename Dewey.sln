@@ -21,6 +21,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{DEE12186-D8A5-462A-A05C-6677FB850009}"
 	ProjectSection(SolutionItems) = preProject
 		docs\conf.py = docs\conf.py
+		contributing.rst = contributing.rst
 		docs\index.rst = docs\index.rst
 	EndProjectSection
 EndProject

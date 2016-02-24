@@ -9,6 +9,8 @@ It includes utility classes, commonly used methods, extension methods for .Net f
 
 We welcome contributions and pull requests. So add all your teams utilities and helpers!
 
+For more information on contributing see :ref:`contributing`.
+
 Projects
 --------
 
@@ -19,6 +21,7 @@ Projects
    dewey-azure/index
    dewey-json/index
    dewey-redis/index
+   contributing
 
 Support
 -------
