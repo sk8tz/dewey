@@ -4,7 +4,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Dewey.Net.Redis
+namespace Dewey.Redis
 {
     public static class Cache
     {
@@ -58,10 +58,7 @@ namespace Dewey.Net.Redis
             _cache.KeyDelete(key);
         }
 
-        public static void Clear()
-        {
-            lazyConnection.Value.GetServer(ConnectionString).FlushDatabase();
-        }
+        public static void Clear() => lazyConnection.Value.GetServer(ConnectionString).FlushDatabase();
 
         public static bool Contains<T>(string key)
         {
