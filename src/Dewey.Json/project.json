@@ -1,0 +1,65 @@
+﻿{
+    "version": "1.0.2",
+    "description": "A collection of .Net utilities for Json",
+    "authors": [
+        "Axial Commerce <contact@axialcommerce.com>"
+    ],
+    "tags": [
+        "Utilities",
+        "Extensions",
+        "Json"
+    ],
+    "projectUrl": "https://github.com/axial/dewey",
+    "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+    "dependencies": {
+        "Newtonsoft.Json": "8.0.2"
+    },
+    "frameworks": {
+        "net45": {
+            "frameworkAssemblies": {
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "net451": {
+            "frameworkAssemblies": {
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "net452": {
+            "frameworkAssemblies": {
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "net46": {
+            "frameworkAssemblies": {
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "dnx45": {
+            "frameworkAssemblies": {
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "dnx451": {
+            "frameworkAssemblies": {
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "dnx452": {
+            "frameworkAssemblies": {
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "dnx46": {
+            "frameworkAssemblies": {
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "dnxcore50": {
+            "dependencies": {
+                "Microsoft.CSharp": "4.0.1-beta-23516",
+                "System.Net.Http": "4.0.1-beta-23516"
+            }
+        }
+    }
+}

@@ -16,8 +16,9 @@ Projects
    :titlesonly:
    
    dewey/index
-   dewey-redis/index
    dewey-azure/index
+   dewey-json/index
+   dewey-redis/index
 
 Support
 -------
