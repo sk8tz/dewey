@@ -1,17 +1,14 @@
-Welcome to Dewey's documentation!
-=================================
+.. _index:
 
-Contents:
+Dewey Documentation
+===================
+
+Projects
+--------
 
 .. toctree::
-   :maxdepth: 2
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   :titlesonly:
+   
+   dewey/index
+   dewey-redis/index
+   dewey-azure/index
