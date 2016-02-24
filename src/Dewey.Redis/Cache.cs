@@ -9,7 +9,6 @@ namespace Dewey.Redis
     public static class Cache
     {
         private static IDatabase _cache => lazyConnection.Value.GetDatabase();
-        private static IServer _server => lazyConnection.Value.GetServer(ConnectionString);
 
         public static int SlidingExpirationMinutes = 30;
 
@@ -101,9 +100,11 @@ namespace Dewey.Redis
                 throw new Exception("Flushing by pattern requires Admin mode.");
             }
 
-            var keys = _server.Keys(pattern: pattern).ToArray();
+            foreach (var endpoint in lazyConnection.Value.GetEndPoints()) {
+                var keys = lazyConnection.Value.GetServer(endpoint).Keys(pattern: pattern).ToArray();
 
-            await _cache.KeyDeleteAsync(keys, CommandFlags.FireAndForget);
+                await lazyConnection.Value.GetDatabase().KeyDeleteAsync(keys);
+            }
         }
     }
 }
