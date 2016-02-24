@@ -25,4 +25,5 @@ Support
 Dewey is an open-source project. While we don't offer official support, you are welcome to use the following resources.
 
 `Github Issues <https://github.com/axial/dewey/issues>`_
+
 `Slack Channel <https://axialcommerce.slack.com/messages/dewey>`_
