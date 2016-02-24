@@ -1,7 +1,6 @@
-﻿#if DNXCORE50
+﻿#if !DNXCORE50
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Reflection;
 
 namespace Dewey.Annotations
 {
@@ -22,7 +21,7 @@ namespace Dewey.Annotations
             }
 
             if (NotBefore != null) {
-                PropertyInfo beforePinfo = validationContext.ObjectInstance.GetType().GetProperty(NotBefore);
+                var beforePinfo = validationContext.ObjectInstance.GetType().GetProperty(NotBefore);
                 var beforeDateTime = (DateTime?)beforePinfo.GetValue(validationContext.ObjectInstance);
 
                 if (beforeDateTime == null || beforeDateTime == DateTime.MinValue) {
@@ -37,7 +36,7 @@ namespace Dewey.Annotations
             }
 
             if (NotAfter != null) {
-                PropertyInfo afterPinfo = validationContext.ObjectInstance.GetType().GetProperty(NotAfter);
+                var afterPinfo = validationContext.ObjectInstance.GetType().GetProperty(NotAfter);
                 var afterDateTime = (DateTime?)afterPinfo.GetValue(validationContext.ObjectInstance);
 
                 if (afterDateTime == null || afterDateTime == DateTime.MinValue) {
