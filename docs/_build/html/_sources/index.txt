@@ -1,22 +1,29 @@
-.. Dewey documentation master file, created by
-   sphinx-quickstart on Tue Feb 23 17:44:33 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. _index:
 
-Welcome to Dewey's documentation!
-=================================
+Dewey Documentation
+===================
 
-Contents:
+Dewey is a collection of .Net utilities.
+
+It includes utility classes, commonly used methods, extension methods for .Net framework classes, and more.
+
+We welcome contributions and pull requests. So add all your teams utilities and helpers!
+
+Projects
+--------
 
 .. toctree::
-   :maxdepth: 2
+   :titlesonly:
+   
+   dewey/index
+   dewey-redis/index
+   dewey-azure/index
 
+Support
+-------
 
+Dewey is an open-source project. While we don't offer official support, you are welcome to use the following resources.
 
-Indices and tables
-==================
+`Github Issues <https://github.com/axial/dewey/issues>`_
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+`Slack Channel <https://axialcommerce.slack.com/messages/dewey>`_
