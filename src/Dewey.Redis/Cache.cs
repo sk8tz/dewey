@@ -3,6 +3,7 @@ using StackExchange.Redis;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace Dewey.Redis
 {
@@ -12,22 +13,14 @@ namespace Dewey.Redis
 
         public static int SlidingExpirationMinutes = 30;
 
-        public static string ConnectionString { get; set; }
-        public static bool Admin { get; set; }
+        public static ConfigurationOptions ConfigurationOptions { get; set; }
 
         private static Lazy<ConnectionMultiplexer> lazyConnection = new Lazy<ConnectionMultiplexer>(() => {
-            if (ConnectionString == null) {
-                throw new ArgumentNullException("A connection string must be set.");
+            if (ConfigurationOptions == null) {
+                throw new ArgumentNullException("ConfigurationOptions must be set.");
             }
 
-            var configuration = new ConfigurationOptions
-            {
-                AllowAdmin = Admin
-            };
-
-            configuration.EndPoints.Add(ConnectionString);
-
-            return ConnectionMultiplexer.Connect(configuration);
+            return ConnectionMultiplexer.Connect(ConfigurationOptions);
         });
 
         private static TimeSpan TimeToExpire => new TimeSpan(0, SlidingExpirationMinutes, 0);
@@ -57,7 +50,12 @@ namespace Dewey.Redis
             _cache.KeyDelete(key);
         }
 
-        public static void Clear() => lazyConnection.Value.GetServer(ConnectionString).FlushDatabase();
+        public static void Clear()
+        {
+            foreach (var endpoint in lazyConnection.Value.GetEndPoints()) {
+                lazyConnection.Value.GetServer(endpoint).FlushDatabase();
+            }
+        }
 
         public static bool Contains<T>(string key)
         {
@@ -96,7 +94,7 @@ namespace Dewey.Redis
 
         public async static Task Flush(string pattern)
         {
-            if (!Admin) {
+            if (!ConfigurationOptions.AllowAdmin) {
                 throw new Exception("Flushing by pattern requires Admin mode.");
             }
 
