@@ -56,6 +56,14 @@ namespace Dewey.Blob
 
         public async Task<bool> ExistsAsync(string container, string name) => await Provider.ExistsAsync(container, name);
 
+        public void DeleteBlob(string container, string name) => Provider.DeleteBlob(container, name);
+
+        public async Task DeleteBlobAsync(string container, string name) => await Provider.DeleteBlobAsync(container, name);
+
+        public void DeleteContainer(string container) => Provider.DeleteContainer(container);
+
+        public async Task DeleteContainerAsync(string container) => await Provider.DeleteContainerAsync(container);
+
         #region IDisposable Support
         private bool _disposed;
 
