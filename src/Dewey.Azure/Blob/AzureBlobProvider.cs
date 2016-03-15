@@ -58,7 +58,7 @@ namespace Dewey.Azure.Blob
         public async Task UploadAsync(string container, string name, byte[] data, bool overwrite = true)
         {
             using (var stream = new MemoryStream(data)) {
-                await UploadAsync(container, name, data, overwrite);
+                await UploadAsync(container, name, stream, overwrite);
             }
         }
 
