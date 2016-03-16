@@ -1,0 +1,68 @@
+﻿{
+    "version": "1.0.8",
+    "description": "A collection of .Net utilities for Github",
+    "authors": [
+        "Axial Commerce <contact@axialcommerce.com>"
+    ],
+    "tags": [
+        "Utilities",
+        "Extensions",
+        "Github"
+    ],
+    "projectUrl": "https://github.com/axial/dewey",
+    "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+    "dependencies": {
+        "Newtonsoft.Json": "8.0.2",
+        "Octokit": "0.19.0"
+    },
+    "frameworks": {
+        "net45": {
+            "frameworkAssemblies": {
+                "System.ComponentModel.DataAnnotations": "4.0.0.0",
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "net451": {
+            "frameworkAssemblies": {
+                "System.ComponentModel.DataAnnotations": "4.0.0.0",
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "net452": {
+            "frameworkAssemblies": {
+                "System.ComponentModel.DataAnnotations": "4.0.0.0",
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "net46": {
+            "frameworkAssemblies": {
+                "System.ComponentModel.DataAnnotations": "4.0.0.0",
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "dnx45": {
+            "frameworkAssemblies": {
+                "System.ComponentModel.DataAnnotations": "4.0.0.0",
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "dnx451": {
+            "frameworkAssemblies": {
+                "System.ComponentModel.DataAnnotations": "4.0.0.0",
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "dnx452": {
+            "frameworkAssemblies": {
+                "System.ComponentModel.DataAnnotations": "4.0.0.0",
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "dnx46": {
+            "frameworkAssemblies": {
+                "System.ComponentModel.DataAnnotations": "4.0.0.0",
+                "System.Net.Http": "4.0.0.0"
+            }
+        }
+    }
+}
