@@ -1,4 +1,4 @@
-Dewey Redis
+Dewey Slack
 -----------
 
-A collection of .Net utilities for Redis
+A collection of .Net utilities for Slack

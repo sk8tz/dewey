@@ -47,6 +47,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dewey.Json", "Dewey.Json", 
 		docs\dewey-json\index.rst = docs\dewey-json\index.rst
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dewey.Slack", "Dewey.Slack", "{42ACA2B4-EE74-4A47-81CC-46159FC62B1E}"
+	ProjectSection(SolutionItems) = preProject
+		docs\dewey-redis\index.rst = docs\dewey-redis\index.rst
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Dewey.Slack", "src\Dewey.Slack\Dewey.Slack.xproj", "{9AA1C3AB-73DE-412D-AE58-B89EEAA014FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +76,10 @@ Global
 		{DE9AEEBA-9715-4AA6-A3EA-FD8ECD4A1AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE9AEEBA-9715-4AA6-A3EA-FD8ECD4A1AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE9AEEBA-9715-4AA6-A3EA-FD8ECD4A1AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AA1C3AB-73DE-412D-AE58-B89EEAA014FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AA1C3AB-73DE-412D-AE58-B89EEAA014FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AA1C3AB-73DE-412D-AE58-B89EEAA014FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AA1C3AB-73DE-412D-AE58-B89EEAA014FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,5 +93,7 @@ Global
 		{29DE50BD-5AD3-48C0-8008-F1605DA4CEC7} = {DEE12186-D8A5-462A-A05C-6677FB850009}
 		{DE9AEEBA-9715-4AA6-A3EA-FD8ECD4A1AA6} = {4F922B63-87AC-4F82-BCD1-10D3DC7ED0F5}
 		{F751D046-6079-4498-A865-04E11077D68D} = {DEE12186-D8A5-462A-A05C-6677FB850009}
+		{42ACA2B4-EE74-4A47-81CC-46159FC62B1E} = {DEE12186-D8A5-462A-A05C-6677FB850009}
+		{9AA1C3AB-73DE-412D-AE58-B89EEAA014FA} = {4F922B63-87AC-4F82-BCD1-10D3DC7ED0F5}
 	EndGlobalSection
 EndGlobal

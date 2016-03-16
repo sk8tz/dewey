@@ -1,13 +1,13 @@
 ﻿{
     "version": "1.0.8",
-    "description": "A collection of .Net utilities for Json",
+    "description": "A collection of .Net utilities for Slack",
     "authors": [
         "Axial Commerce <contact@axialcommerce.com>"
     ],
     "tags": [
         "Utilities",
         "Extensions",
-        "Json"
+        "Slack"
     ],
     "projectUrl": "https://github.com/axial/dewey",
     "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",

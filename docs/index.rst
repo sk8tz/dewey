@@ -21,6 +21,7 @@ Projects
    dewey-azure/index
    dewey-json/index
    dewey-redis/index
+   dewey-slack/index
    contributing
 
 Support
