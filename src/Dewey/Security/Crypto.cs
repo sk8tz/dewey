@@ -36,8 +36,7 @@ namespace Dewey.Security
                         sizeof(int));
                     msEncrypt.Write(aes.IV, 0, aes.IV.Length);
 
-                    using (var csEncrypt = new CryptoStream(msEncrypt, encryptor,
-                        CryptoStreamMode.Write))
+                    using (var csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
                     using (var swEncrypt = new StreamWriter(csEncrypt)) {
                         swEncrypt.Write(plaintext);
                     }

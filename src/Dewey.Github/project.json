@@ -1,5 +1,5 @@
 ﻿{
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "A collection of .Net utilities for Github",
     "authors": [
         "Axial Commerce <contact@axialcommerce.com>"
@@ -12,7 +12,7 @@
     "projectUrl": "https://github.com/axial/dewey",
     "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
     "dependencies": {
-        "Newtonsoft.Json": "8.0.2",
+        "Newtonsoft.Json": "8.0.3",
         "Octokit": "0.19.0"
     },
     "frameworks": {

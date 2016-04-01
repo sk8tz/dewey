@@ -3,11 +3,11 @@
   "version": 2,
   "targets": {
     ".NETFramework,Version=v4.5": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -146,7 +146,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -215,11 +215,11 @@
       }
     },
     ".NETFramework,Version=v4.5.1": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -358,7 +358,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -427,11 +427,11 @@
       }
     },
     ".NETFramework,Version=v4.5.2": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -570,7 +570,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -639,11 +639,11 @@
       }
     },
     ".NETFramework,Version=v4.6": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -782,7 +782,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -851,11 +851,11 @@
       }
     },
     "DNX,Version=v4.5": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": "DNX,Version=v4.5",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -994,7 +994,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -1063,11 +1063,11 @@
       }
     },
     "DNX,Version=v4.5.1": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -1206,7 +1206,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -1275,11 +1275,11 @@
       }
     },
     "DNX,Version=v4.5.2": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": "DNX,Version=v4.5.2",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -1418,7 +1418,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -1487,11 +1487,11 @@
       }
     },
     "DNX,Version=v4.6": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -1630,7 +1630,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -1699,11 +1699,11 @@
       }
     },
     ".NETFramework,Version=v4.5/win7-x86": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -1842,7 +1842,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -1911,11 +1911,11 @@
       }
     },
     ".NETFramework,Version=v4.5/win7-x64": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -2054,7 +2054,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -2123,11 +2123,11 @@
       }
     },
     ".NETFramework,Version=v4.5.1/win7-x86": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -2266,7 +2266,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -2335,11 +2335,11 @@
       }
     },
     ".NETFramework,Version=v4.5.1/win7-x64": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -2478,7 +2478,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -2547,11 +2547,11 @@
       }
     },
     ".NETFramework,Version=v4.5.2/win7-x86": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -2690,7 +2690,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -2759,11 +2759,11 @@
       }
     },
     ".NETFramework,Version=v4.5.2/win7-x64": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -2902,7 +2902,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -2971,11 +2971,11 @@
       }
     },
     ".NETFramework,Version=v4.6/win7-x86": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -3114,7 +3114,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -3183,11 +3183,11 @@
       }
     },
     ".NETFramework,Version=v4.6/win7-x64": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -3326,7 +3326,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -3395,11 +3395,11 @@
       }
     },
     "DNX,Version=v4.5/win7-x86": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": "DNX,Version=v4.5",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -3538,7 +3538,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -3607,11 +3607,11 @@
       }
     },
     "DNX,Version=v4.5/win7-x64": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": "DNX,Version=v4.5",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -3750,7 +3750,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -3819,11 +3819,11 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x86": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -3962,7 +3962,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -4031,11 +4031,11 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x64": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -4174,7 +4174,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -4243,11 +4243,11 @@
       }
     },
     "DNX,Version=v4.5.2/win7-x86": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": "DNX,Version=v4.5.2",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -4386,7 +4386,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -4455,11 +4455,11 @@
       }
     },
     "DNX,Version=v4.5.2/win7-x64": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": "DNX,Version=v4.5.2",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -4598,7 +4598,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -4667,11 +4667,11 @@
       }
     },
     "DNX,Version=v4.6/win7-x86": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -4810,7 +4810,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -4879,11 +4879,11 @@
       }
     },
     "DNX,Version=v4.6/win7-x64": {
-      "Dewey/1.0.8": {
+      "Dewey/1.0.9": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
         "dependencies": {
-          "Newtonsoft.Json": "8.0.2"
+          "Newtonsoft.Json": "8.0.3"
         },
         "frameworkAssemblies": [
           "System.ComponentModel",
@@ -5022,7 +5022,7 @@
           }
         }
       },
-      "Newtonsoft.Json/8.0.2": {
+      "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -5092,7 +5092,7 @@
     }
   },
   "libraries": {
-    "Dewey/1.0.8": {
+    "Dewey/1.0.9": {
       "type": "project",
       "path": "../Dewey/project.json"
     },
@@ -5258,9 +5258,9 @@
         "Microsoft.Data.Services.Client.nuspec"
       ]
     },
-    "Newtonsoft.Json/8.0.2": {
+    "Newtonsoft.Json/8.0.3": {
       "type": "package",
-      "sha512": "e5yWmEfu68rmtG431zl9N/7PlNKQDIuiDW5MHlEFAZcecakcxrIGnKqrPAtWNILzK2oNanRB5cD150MYhECK3g==",
+      "sha512": "KGsYQdS2zLH+H8x2cZaSI7e+YZ4SFIbyy1YJQYl6GYBWjf5o4H1A68nxyq+WTyVSOJQ4GqS/DiPE+UseUizgMg==",
       "files": [
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -5274,8 +5274,8 @@
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
-        "Newtonsoft.Json.8.0.2.nupkg",
-        "Newtonsoft.Json.8.0.2.nupkg.sha512",
+        "Newtonsoft.Json.8.0.3.nupkg",
+        "Newtonsoft.Json.8.0.3.nupkg.sha512",
         "Newtonsoft.Json.nuspec",
         "tools/install.ps1"
       ]
@@ -5354,13 +5354,13 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Dewey >= 1.0.8",
+      "Dewey >= 1.0.9",
       "WindowsAzure.Storage >= 6.2.0",
       "Microsoft.Azure.KeyVault.Core >= 1.0.0",
       "Microsoft.Data.Edm >= 5.7.0",
       "Microsoft.Data.OData >= 5.7.0",
       "Microsoft.Data.Services.Client >= 5.7.0",
-      "Newtonsoft.Json >= 8.0.2",
+      "Newtonsoft.Json >= 8.0.3",
       "System.Spatial >= 5.7.0"
     ],
     ".NETFramework,Version=v4.5": [],
