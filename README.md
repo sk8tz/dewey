@@ -1,7 +1,6 @@
-# Dewey
+# Dewey  
+
 A collection of .Net utilities
 
-For more information see our documentation at 
-
-[dewey.axialcommerce.com](http://dewey.axialcommerce.com/)
+For more information see our [Wiki](https://github.com/axial/dewey/wiki)
 
