@@ -1,4 +1,4 @@
-﻿#if !DNXCORE50
+#if !DNXCORE50
 using Dewey.Types;
 using System;
 using System.IO;
@@ -21,20 +21,20 @@ namespace Dewey.Security
                 return "";
 
             var result = string.Empty;
-            RijndaelManaged aes = null;
+            RijndaelManaged rij = null;
 
             try {
                 var derivedKey = new Rfc2898DeriveBytes(key, saltBytes);
 
-                aes = new RijndaelManaged();
-                aes.Key = derivedKey.GetBytes(aes.KeySize / 8);
+                rij = new RijndaelManaged();
+                rij.Key = derivedKey.GetBytes(rij.KeySize / 8);
 
-                var encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
+                var encryptor = rij.CreateEncryptor(rij.Key, rij.IV);
 
                 using (var msEncrypt = new MemoryStream()) {
-                    msEncrypt.Write(BitConverter.GetBytes(aes.IV.Length), 0,
+                    msEncrypt.Write(BitConverter.GetBytes(rij.IV.Length), 0,
                         sizeof(int));
-                    msEncrypt.Write(aes.IV, 0, aes.IV.Length);
+                    msEncrypt.Write(rij.IV, 0, rij.IV.Length);
 
                     using (var csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
                     using (var swEncrypt = new StreamWriter(csEncrypt)) {
@@ -44,8 +44,48 @@ namespace Dewey.Security
                     result = Convert.ToBase64String(msEncrypt.ToArray());
                 }
             } finally {
-                if (aes != null) {
-                    aes.Clear();
+                if (rij != null) {
+                    rij.Clear();
+                }
+            }
+
+            return result;
+        }
+
+        public static string EncryptStaticIV(string plaintext)
+        {
+            if (plaintext.IsBlank()) {
+                return "";
+            }
+
+            var result = string.Empty;
+            RijndaelManaged rij = null;
+
+            try {
+                var derivedKey = new Rfc2898DeriveBytes(Crypto.Key, Encoding.ASCII.GetBytes(Crypto.Salt));
+
+                rij = new RijndaelManaged();
+                rij.Key = derivedKey.GetBytes(rij.KeySize / 8);
+                rij.IV = Encoding.ASCII.GetBytes(Crypto.Salt);
+
+                var encryptor = rij.CreateEncryptor(rij.Key, rij.IV);
+
+                using (var msEncrypt = new MemoryStream()) {
+                    msEncrypt.Write(BitConverter.GetBytes(rij.IV.Length), 0,
+                        sizeof(int));
+                    msEncrypt.Write(rij.IV, 0, rij.IV.Length);
+
+                    using (var csEncrypt = new CryptoStream(msEncrypt, encryptor,
+                        CryptoStreamMode.Write))
+                    using (var swEncrypt = new StreamWriter(csEncrypt)) {
+                        swEncrypt.Write(plaintext);
+                    }
+
+                    result = Convert.ToBase64String(msEncrypt.ToArray());
+                }
+            } finally {
+                if (rij != null) {
+                    rij.Clear();
                 }
             }
 
@@ -61,20 +101,20 @@ namespace Dewey.Security
             }
 
             var plaintext = string.Empty;
-            RijndaelManaged aesAlg = null;
+            RijndaelManaged rij = null;
 
             try {
                 var derivedKey = new Rfc2898DeriveBytes(key, saltBytes);
 
                 byte[] bytes = Convert.FromBase64String(cipher);
                 using (MemoryStream msDecrypt = new MemoryStream(bytes)) {
-                    aesAlg = new RijndaelManaged();
-                    aesAlg.Key = derivedKey.GetBytes(aesAlg.KeySize / 8);
+                    rij = new RijndaelManaged();
+                    rij.Key = derivedKey.GetBytes(rij.KeySize / 8);
 
-                    aesAlg.IV = ReadByteArray(msDecrypt);
+                    rij.IV = ReadByteArray(msDecrypt);
 
-                    ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key,
-                        aesAlg.IV);
+                    ICryptoTransform decryptor = rij.CreateDecryptor(rij.Key,
+                        rij.IV);
 
                     using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor,
                         CryptoStreamMode.Read))
@@ -83,8 +123,8 @@ namespace Dewey.Security
                     }
                 }
             } finally {
-                if (aesAlg != null) {
-                    aesAlg.Clear();
+                if (rij != null) {
+                    rij.Clear();
                 }
             }
 
