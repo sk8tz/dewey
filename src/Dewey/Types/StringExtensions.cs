@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace Dewey.Types
 {
@@ -127,6 +128,38 @@ namespace Dewey.Types
             result.Add(s);
 
             return result.ToArray();
+        }
+
+        public static string Minify(this string value)
+        {
+            var lines = value.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+
+            var result = new StringBuilder();
+
+            foreach (var line in lines) {
+                var trimLine = line.Trim();
+
+                result.Append(trimLine);
+            }
+
+            return result.ToString();
+        }
+
+        public static string ToMinifiedString(this StringBuilder value)
+        {
+            var valueText = value.ToString();
+
+            var lines = valueText.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+
+            var result = new StringBuilder();
+
+            foreach (var line in lines) {
+                var trimLine = line.Trim();
+
+                result.Append(trimLine);
+            }
+
+            return result.ToString();
         }
     }
 }

@@ -1,60 +1,58 @@
 ﻿{
     "version": "1.0.11",
-    "description": "A collection of .Net utilities for Github",
+    "description": "A collection of .Net utilities for Caching",
     "authors": [
         "Axial Commerce <contact@axialcommerce.com>"
     ],
     "tags": [
         "Utilities",
         "Extensions",
-        "Github"
+        "Caching"
     ],
     "projectUrl": "https://github.com/axial/dewey",
     "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
     "dependencies": {
-        "Microsoft.Net.Http": "2.2.22",
-        "Newtonsoft.Json": "8.0.3",
-        "Octokit": "0.19.0"
+        "Microsoft.CSharp": "4.0.1-beta-23516"
     },
     "frameworks": {
         "net45": {
             "frameworkAssemblies": {
-                "System.Threading": "4.0.0.0"
+                "System.Runtime.Caching": "4.0.0.0"
             }
         },
         "net451": {
             "frameworkAssemblies": {
-                "System.Threading": "4.0.0.0"
+                "System.Runtime.Caching": "4.0.0.0"
             }
         },
         "net452": {
             "frameworkAssemblies": {
-                "System.Threading": "4.0.0.0"
+                "System.Runtime.Caching": "4.0.0.0"
             }
         },
         "net46": {
             "frameworkAssemblies": {
-                "System.Threading": "4.0.0.0"
+                "System.Runtime.Caching": "4.0.0.0"
             }
         },
         "dnx45": {
             "frameworkAssemblies": {
-                "System.Threading": "4.0.0.0"
+                "System.Runtime.Caching": "4.0.0.0"
             }
         },
         "dnx451": {
             "frameworkAssemblies": {
-                "System.Threading": "4.0.0.0"
+                "System.Runtime.Caching": "4.0.0.0"
             }
         },
         "dnx452": {
             "frameworkAssemblies": {
-                "System.Threading": "4.0.0.0"
+                "System.Runtime.Caching": "4.0.0.0"
             }
         },
         "dnx46": {
             "frameworkAssemblies": {
-                "System.Threading": "4.0.0.0"
+                "System.Runtime.Caching": "4.0.0.0"
             }
         }
     }

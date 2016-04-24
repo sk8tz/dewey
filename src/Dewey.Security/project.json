@@ -1,25 +1,23 @@
 ﻿{
     "version": "1.0.11",
-    "description": "A collection of .Net utilities for Azure",
+    "description": "A collection of .Net utilities for Security",
     "authors": [
         "Axial Commerce <contact@axialcommerce.com>"
     ],
     "tags": [
         "Utilities",
         "Extensions",
-        "Azure"
+        "Security"
     ],
     "projectUrl": "https://github.com/axial/dewey",
     "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
     "dependencies": {
         "Dewey": "1.0.11",
-        "WindowsAzure.Storage": "7.0.1-preview",
-        "Microsoft.Azure.KeyVault.Core": "1.0.0",
-        "Microsoft.Data.Edm": "5.7.0",
-        "Microsoft.Data.OData": "5.7.0",
-        "Microsoft.Data.Services.Client": "5.7.0",
-        "Newtonsoft.Json": "8.0.3",
-        "System.Spatial": "5.7.0"
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Runtime": "4.0.21-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
     },
     "frameworks": {
         "net45": { },
@@ -29,7 +27,6 @@
         "dnx45": { },
         "dnx451": { },
         "dnx452": { },
-        "dnx46": { },
-        "dotnet54": { }
+        "dnx46": { }
     }
 }

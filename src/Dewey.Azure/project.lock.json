@@ -15276,7 +15276,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Dewey >= 1.0.10",
+      "Dewey >= 1.0.11",
       "WindowsAzure.Storage >= 7.0.1-preview",
       "Microsoft.Azure.KeyVault.Core >= 1.0.0",
       "Microsoft.Data.Edm >= 5.7.0",

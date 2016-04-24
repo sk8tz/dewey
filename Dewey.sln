@@ -30,6 +30,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Dewey.Security", "src\Dewey
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Dewey.Temporal", "src\Dewey.Temporal\Dewey.Temporal.xproj", "{C4E8A03E-24DD-4F6A-938A-AADE6826F248}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Dewey.Xml", "src\Dewey.Xml\Dewey.Xml.xproj", "{9A56AF6D-8DE9-48D2-86C7-316E8E3D90CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +74,10 @@ Global
 		{C4E8A03E-24DD-4F6A-938A-AADE6826F248}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4E8A03E-24DD-4F6A-938A-AADE6826F248}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4E8A03E-24DD-4F6A-938A-AADE6826F248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A56AF6D-8DE9-48D2-86C7-316E8E3D90CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A56AF6D-8DE9-48D2-86C7-316E8E3D90CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A56AF6D-8DE9-48D2-86C7-316E8E3D90CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A56AF6D-8DE9-48D2-86C7-316E8E3D90CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,5 +92,6 @@ Global
 		{3CB0117D-E4E5-4CD9-8FCF-1E2454D51799} = {4F922B63-87AC-4F82-BCD1-10D3DC7ED0F5}
 		{D8EC285A-63D4-408A-8722-C3F73E2C1A3F} = {4F922B63-87AC-4F82-BCD1-10D3DC7ED0F5}
 		{C4E8A03E-24DD-4F6A-938A-AADE6826F248} = {4F922B63-87AC-4F82-BCD1-10D3DC7ED0F5}
+		{9A56AF6D-8DE9-48D2-86C7-316E8E3D90CC} = {4F922B63-87AC-4F82-BCD1-10D3DC7ED0F5}
 	EndGlobalSection
 EndGlobal
