@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
 
-namespace Dewey.List
+namespace Dewey.Types
 {
     public static class ListExtensions
     {
+        public static bool IsEmpty<T>(this List<T> value) => (value == null || value.Count == 0);
+        public static bool IsNotEmpty<T>(this List<T> value) => !value.IsEmpty();
+
         public static List<T> Fill<T>(int size, T value)
         {
             var result = new List<T>();

@@ -83,16 +83,35 @@ namespace Dewey.Types
             return wordNumber.ToString().Trim();
         }
 
-        public static decimal Add(this decimal value, decimal arg) => (value + arg);
+        public static bool IsAfter(this decimal value, decimal other) => (value > other);
+        public static bool IsBefore(this decimal value, decimal other) => (value < other);
 
-        public static decimal Subtract(this decimal value, decimal arg) => (value - arg);
+        public static int ToInt(this decimal value) => Convert.ToInt32(value);
+        public static double ToDouble(this decimal value) => Convert.ToDouble(value);
+        public static long ToLong(this decimal value) => Convert.ToInt64(value);
 
-        public static decimal Multiply(this decimal value, decimal arg) => (value * arg);
-
-        public static decimal Divide(this decimal value, decimal arg) => (value / arg);
+        public static bool IsZero(this decimal value) => (value == decimal.Zero);
 
         public static decimal Round(this decimal value, int decimals = 2) => Math.Round(value, decimals);
 
-        public static bool IsZero(this decimal value) => (value == decimal.Zero);
+        public static decimal Add(this decimal value, decimal arg) => (value + arg);
+        public static decimal Add(this decimal value, int arg) => (value + arg.ToDecimal());
+        public static decimal Add(this decimal value, double arg) => (value + arg.ToDecimal());
+        public static decimal Add(this decimal value, long arg) => (value + arg.ToDecimal());
+
+        public static decimal Subtract(this decimal value, decimal arg) => (value - arg);
+        public static decimal Subtract(this decimal value, int arg) => (value - arg.ToDecimal());
+        public static decimal Subtract(this decimal value, double arg) => (value - arg.ToDecimal());
+        public static decimal Subtract(this decimal value, long arg) => (value - arg.ToDecimal());
+
+        public static decimal Multiply(this decimal value, decimal arg) => (value * arg);
+        public static decimal Multiply(this decimal value, int arg) => (value * arg.ToDecimal());
+        public static decimal Multiply(this decimal value, double arg) => (value * arg.ToDecimal());
+        public static decimal Multiply(this decimal value, long arg) => (value * arg.ToDecimal());
+
+        public static decimal Divide(this decimal value, decimal arg) => (value / arg);
+        public static decimal Divide(this decimal value, int arg) => (value / arg.ToDecimal());
+        public static decimal Divide(this decimal value, double arg) => (value / arg.ToDecimal());
+        public static decimal Divide(this decimal value, long arg) => (value / arg.ToDecimal());
     }
 }
