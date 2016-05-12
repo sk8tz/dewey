@@ -3,7 +3,7 @@
   "version": 2,
   "targets": {
     ".NETFramework,Version=v4.5": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "dependencies": {
@@ -308,7 +308,7 @@
       }
     },
     ".NETFramework,Version=v4.5.1": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
@@ -613,7 +613,7 @@
       }
     },
     ".NETFramework,Version=v4.5.2": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
@@ -918,7 +918,7 @@
       }
     },
     ".NETFramework,Version=v4.6": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
@@ -1715,7 +1715,7 @@
       }
     },
     "DNX,Version=v4.5": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": "DNX,Version=v4.5",
         "dependencies": {
@@ -2020,7 +2020,7 @@
       }
     },
     "DNX,Version=v4.5.1": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
@@ -2325,7 +2325,7 @@
       }
     },
     "DNX,Version=v4.5.2": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": "DNX,Version=v4.5.2",
         "dependencies": {
@@ -2630,7 +2630,7 @@
       }
     },
     "DNX,Version=v4.6": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
         "dependencies": {
@@ -3427,7 +3427,7 @@
       }
     },
     ".NETPlatform,Version=v5.4": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETPlatform,Version=v5.4",
         "dependencies": {
@@ -4287,7 +4287,7 @@
       }
     },
     ".NETFramework,Version=v4.5/win7-x86": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "dependencies": {
@@ -4607,7 +4607,7 @@
       }
     },
     ".NETFramework,Version=v4.5/win7-x64": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "dependencies": {
@@ -4927,7 +4927,7 @@
       }
     },
     ".NETFramework,Version=v4.5.1/win7-x86": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
@@ -5247,7 +5247,7 @@
       }
     },
     ".NETFramework,Version=v4.5.1/win7-x64": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
@@ -5567,7 +5567,7 @@
       }
     },
     ".NETFramework,Version=v4.5.2/win7-x86": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
@@ -5887,7 +5887,7 @@
       }
     },
     ".NETFramework,Version=v4.5.2/win7-x64": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
@@ -6207,7 +6207,7 @@
       }
     },
     ".NETFramework,Version=v4.6/win7-x86": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
@@ -7037,7 +7037,7 @@
       }
     },
     ".NETFramework,Version=v4.6/win7-x64": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
@@ -7867,7 +7867,7 @@
       }
     },
     "DNX,Version=v4.5/win7-x86": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": "DNX,Version=v4.5",
         "dependencies": {
@@ -8187,7 +8187,7 @@
       }
     },
     "DNX,Version=v4.5/win7-x64": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": "DNX,Version=v4.5",
         "dependencies": {
@@ -8507,7 +8507,7 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x86": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
@@ -8827,7 +8827,7 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x64": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
@@ -9147,7 +9147,7 @@
       }
     },
     "DNX,Version=v4.5.2/win7-x86": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": "DNX,Version=v4.5.2",
         "dependencies": {
@@ -9467,7 +9467,7 @@
       }
     },
     "DNX,Version=v4.5.2/win7-x64": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": "DNX,Version=v4.5.2",
         "dependencies": {
@@ -9787,7 +9787,7 @@
       }
     },
     "DNX,Version=v4.6/win7-x86": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
         "dependencies": {
@@ -10617,7 +10617,7 @@
       }
     },
     "DNX,Version=v4.6/win7-x64": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
         "dependencies": {
@@ -11447,7 +11447,7 @@
       }
     },
     ".NETPlatform,Version=v5.4/win7-x86": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETPlatform,Version=v5.4",
         "dependencies": {
@@ -12390,7 +12390,7 @@
       }
     },
     ".NETPlatform,Version=v5.4/win7-x64": {
-      "Dewey/1.0.12": {
+      "Dewey/1.0.13": {
         "type": "project",
         "framework": ".NETPlatform,Version=v5.4",
         "dependencies": {
@@ -13334,7 +13334,7 @@
     }
   },
   "libraries": {
-    "Dewey/1.0.12": {
+    "Dewey/1.0.13": {
       "type": "project",
       "path": "../Dewey/project.json"
     },
@@ -15276,7 +15276,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Dewey >= 1.0.12",
+      "Dewey >= 1.0.13",
       "WindowsAzure.Storage >= 7.0.1-preview",
       "Microsoft.Azure.KeyVault.Core >= 1.0.0",
       "Microsoft.Data.Edm >= 5.7.0",

@@ -1,14 +1,14 @@
 ﻿{
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "A collection of .Net utilities",
     "authors": [
-        "Axial Commerce <contact@axialcommerce.com>"
+        "Cady.IO <contact@cady.io>"
     ],
     "tags": [
         "Utilities",
         "Extensions"
     ],
-    "projectUrl": "https://github.com/axial/dewey",
+    "projectUrl": "https://github.com/cady/dewey",
     "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
     "dependencies": {
         "Microsoft.CSharp": "4.0.1-beta-23516",
