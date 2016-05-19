@@ -4,6 +4,21 @@ param(
 
 $src = dir .\src
 
+function clean {
+    foreach ($dir in $src) {
+        Set-Location .\src\$dir
+
+        if(Test-Path -Path .\bin) {
+            Remove-Item .\bin -Force -Recurse
+            "$dir\bin deleted."
+        } else {
+            "$dir\bin not found."
+        }
+
+        Set-Location ..\..\
+    }
+}
+
 function build {
     foreach ($dir in $src) {
         Set-Location .\src\$dir
@@ -47,6 +62,9 @@ function love {
 }
 
 switch($a) {
+    "clean" {
+        clean
+    }
     "restore" {
         restore
     }
@@ -62,7 +80,8 @@ switch($a) {
     "love" {
         love
     }
-    default { 
+    default {
+        clean
         restore
         build
         pack

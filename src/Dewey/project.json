@@ -1,5 +1,5 @@
 {
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "A collection of .Net utilities",
     "authors": [
         "Cady.IO <contact@cady.io>"
@@ -9,7 +9,7 @@
             "Utilities",
             "Extensions"
         ],
-        "iconUrl": "https://github.com/cady-io/dewey/assets/dewey-32x32.png",
+        "iconUrl": "https://raw.githubusercontent.com/cady-io/dewey/master/assets/dewey-32x32.png",
         "projectUrl": "https://github.com/cady/dewey",
         "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
         "repository": {

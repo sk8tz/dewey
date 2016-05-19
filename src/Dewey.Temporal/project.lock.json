@@ -1876,7 +1876,7 @@
           "lib/netstandard1.3/_._": {}
         }
       },
-      "Dewey/2.0.0": {
+      "Dewey/2.0.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.0",
         "dependencies": {
@@ -1895,7 +1895,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "Dewey/2.0.0": {
+      "Dewey/2.0.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "dependencies": {
@@ -1916,7 +1916,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "Dewey/2.0.0": {
+      "Dewey/2.0.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
@@ -1937,7 +1937,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "Dewey/2.0.0": {
+      "Dewey/2.0.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
@@ -1958,7 +1958,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "Dewey/2.0.0": {
+      "Dewey/2.0.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
@@ -1979,7 +1979,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "Dewey/2.0.0": {
+      "Dewey/2.0.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
         "dependencies": {
@@ -6484,14 +6484,14 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Dewey/2.0.0": {
+    "Dewey/2.0.1": {
       "type": "project",
       "path": "../Dewey/project.json"
     }
   },
   "projectFileDependencyGroups": {
     "": [
-      "Dewey >= 2.0.0"
+      "Dewey >= 2.0.1"
     ],
     ".NETCoreApp,Version=v1.0": [
       "Microsoft.NETCore.App >= 1.0.0-rc2-3002702"

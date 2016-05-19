@@ -12,7 +12,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "Dewey/2.0.0": {
+      "Dewey/2.0.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "dependencies": {
@@ -33,7 +33,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "Dewey/2.0.0": {
+      "Dewey/2.0.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
@@ -54,7 +54,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "Dewey/2.0.0": {
+      "Dewey/2.0.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
@@ -75,7 +75,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "Dewey/2.0.0": {
+      "Dewey/2.0.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
@@ -96,7 +96,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "Dewey/2.0.0": {
+      "Dewey/2.0.1": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
         "dependencies": {
@@ -130,14 +130,14 @@
         "tools/install.ps1"
       ]
     },
-    "Dewey/2.0.0": {
+    "Dewey/2.0.1": {
       "type": "project",
       "path": "../Dewey/project.json"
     }
   },
   "projectFileDependencyGroups": {
     "": [
-      "Dewey >= 2.0.0"
+      "Dewey >= 2.0.1"
     ],
     ".NETFramework,Version=v4.5": [
       "System"
