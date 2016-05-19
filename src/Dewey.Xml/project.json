@@ -1,0 +1,64 @@
+{
+    "version": "2.0.0",
+    "description": "A collection of .Net utilities for Xml",
+    "authors": [
+        "Cady.IO <contact@cady.io>"
+    ],
+    "packOptions": {
+        "tags": [
+            "Utilities",
+            "Extensions",
+            "Xml"
+        ],
+        "iconUrl": "https://github.com/cady-io/dewey/assets/dewey-32x32.png",
+        "projectUrl": "https://github.com/cady/dewey",
+        "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+        "repository": {
+            "type": "git",
+            "url": "git://github.com/cady/dewey"
+        },
+        "summary": "A collection of .Net utilities for Xml"
+    },
+    "dependencies": {
+        "Microsoft.AspNetCore.Mvc.Formatters.Xml": "1.0.0-rc2-final"
+    },
+    "frameworks": {
+        "net451": {
+            "frameworkAssemblies": {
+                "System": "",
+                "System.Xml.Linq": "",
+                "System.Xml.XDocument": ""
+            }
+        },
+        "net452": {
+            "frameworkAssemblies": {
+                "System": "",
+                "System.Xml.Linq": "",
+                "System.Xml.XDocument": ""
+            }
+        },
+        "net46": {
+            "frameworkAssemblies": {
+                "System": "",
+                "System.Xml.Linq": "",
+                "System.Xml.XDocument": ""
+            }
+        },
+        "net461": {
+            "frameworkAssemblies": {
+                "System": "",
+                "System.Xml.Linq": "",
+                "System.Xml.XDocument": ""
+            }
+        },
+        "netcoreapp1.0": {
+            "imports": "dnxcore50",
+            "dependencies": {
+                "Microsoft.NETCore.App": {
+                    "type": "platform",
+                    "version": "1.0.0-rc2-3002702"
+                }
+            }
+        }
+    }
+}

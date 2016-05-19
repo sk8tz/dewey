@@ -1,0 +1,167 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.5": {
+      "Newtonsoft.Json/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "StackExchange.Redis/1.0.488": {
+        "type": "package",
+        "compile": {
+          "lib/net45/StackExchange.Redis.dll": {}
+        },
+        "runtime": {
+          "lib/net45/StackExchange.Redis.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.1": {
+      "Newtonsoft.Json/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "StackExchange.Redis/1.0.488": {
+        "type": "package",
+        "compile": {
+          "lib/net45/StackExchange.Redis.dll": {}
+        },
+        "runtime": {
+          "lib/net45/StackExchange.Redis.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2": {
+      "Newtonsoft.Json/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "StackExchange.Redis/1.0.488": {
+        "type": "package",
+        "compile": {
+          "lib/net45/StackExchange.Redis.dll": {}
+        },
+        "runtime": {
+          "lib/net45/StackExchange.Redis.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6": {
+      "Newtonsoft.Json/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "StackExchange.Redis/1.0.488": {
+        "type": "package",
+        "compile": {
+          "lib/net45/StackExchange.Redis.dll": {}
+        },
+        "runtime": {
+          "lib/net45/StackExchange.Redis.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1": {
+      "Newtonsoft.Json/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "StackExchange.Redis/1.0.488": {
+        "type": "package",
+        "compile": {
+          "lib/net45/StackExchange.Redis.dll": {}
+        },
+        "runtime": {
+          "lib/net45/StackExchange.Redis.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Newtonsoft.Json/8.0.3": {
+      "sha512": "KGsYQdS2zLH+H8x2cZaSI7e+YZ4SFIbyy1YJQYl6GYBWjf5o4H1A68nxyq+WTyVSOJQ4GqS/DiPE+UseUizgMg==",
+      "type": "package",
+      "files": [
+        "Newtonsoft.Json.8.0.3.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
+        "tools/install.ps1"
+      ]
+    },
+    "StackExchange.Redis/1.0.488": {
+      "sha512": "shDMAcTFnE7y4Z5n59piNaoAKqOsmpxOODaIRvFM4vnYgtaIOfW7O13NSeeXSV/TTFd6fIz4/qOB0LiRE28JJg==",
+      "type": "package",
+      "files": [
+        "StackExchange.Redis.1.0.488.nupkg.sha512",
+        "StackExchange.Redis.nuspec",
+        "lib/net40/StackExchange.Redis.dll",
+        "lib/net40/StackExchange.Redis.dll.config",
+        "lib/net40/StackExchange.Redis.pdb",
+        "lib/net40/StackExchange.Redis.xml",
+        "lib/net45/StackExchange.Redis.dll",
+        "lib/net45/StackExchange.Redis.pdb",
+        "lib/net45/StackExchange.Redis.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Newtonsoft.Json >= 8.0.3",
+      "StackExchange.Redis >= 1.0.488"
+    ],
+    ".NETFramework,Version=v4.5": [
+      "System"
+    ],
+    ".NETFramework,Version=v4.5.1": [
+      "System"
+    ],
+    ".NETFramework,Version=v4.5.2": [
+      "System"
+    ],
+    ".NETFramework,Version=v4.6": [
+      "System"
+    ],
+    ".NETFramework,Version=v4.6.1": [
+      "System"
+    ]
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
+}

@@ -1,0 +1,57 @@
+{
+    "version": "2.0.0",
+    "description": "A collection of .Net utilities for Caching",
+    "authors": [
+        "Cady.IO <contact@cady.io>"
+    ],
+    "packOptions": {
+        "tags": [
+            "Utilities",
+            "Extensions",
+            "Caching"
+        ],
+        "iconUrl": "https://github.com/cady-io/dewey/assets/dewey-32x32.png",
+        "projectUrl": "https://github.com/cady/dewey",
+        "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+        "repository": {
+            "type": "git",
+            "url": "git://github.com/cady/dewey"
+        },
+        "summary": "A collection of .Net utilities for Caching"
+    },
+    "dependencies": {
+        "Newtonsoft.Json": "8.0.3"
+    },
+    "frameworks": {
+        "net45": {
+            "frameworkAssemblies": {
+                "System": "",
+                "System.Runtime.Caching": ""
+            }
+        },
+        "net451": {
+            "frameworkAssemblies": {
+                "System": "",
+                "System.Runtime.Caching": ""
+            }
+        },
+        "net452": {
+            "frameworkAssemblies": {
+                "System": "",
+                "System.Runtime.Caching": ""
+            }
+        },
+        "net46": {
+            "frameworkAssemblies": {
+                "System": "",
+                "System.Runtime.Caching": ""
+            }
+        },
+        "net461": {
+            "frameworkAssemblies": {
+                "System": "",
+                "System.Runtime.Caching": ""
+            }
+        }
+    }
+}

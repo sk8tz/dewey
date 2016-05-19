@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "description": "A collection of .Net utilities for Redis",
+    "authors": [
+        "Cady.IO <contact@cady.io>"
+    ],
+    "packOptions": {
+        "tags": [
+            "Utilities",
+            "Extensions",
+            "Redis"
+        ],
+        "iconUrl": "https://github.com/cady-io/dewey/assets/dewey-32x32.png",
+        "projectUrl": "https://github.com/cady/dewey",
+        "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+        "repository": {
+            "type": "git",
+            "url": "git://github.com/cady/dewey"
+        },
+        "summary": "A collection of .Net utilities for Redis"
+    },
+    "dependencies": {
+        "Newtonsoft.Json": "8.0.3",
+        "StackExchange.Redis": "1.0.488"
+    },
+    "frameworks": {
+        "net45": {
+            "frameworkAssemblies": {
+                "System": ""
+            }
+        },
+        "net451": {
+            "frameworkAssemblies": {
+                "System": ""
+            }
+        },
+        "net452": {
+            "frameworkAssemblies": {
+                "System": ""
+            }
+        },
+        "net46": {
+            "frameworkAssemblies": {
+                "System": ""
+            }
+        },
+        "net461": {
+            "frameworkAssemblies": {
+                "System": ""
+            }
+        }
+    }
+}
