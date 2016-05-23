@@ -3,18 +3,10 @@
   "version": 2,
   "targets": {
     ".NETFramework,Version=v4.5": {
-      "Newtonsoft.Json/8.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Octokit/0.9.0": {
+      "Octokit/0.19.0": {
         "type": "package",
         "frameworkAssemblies": [
+          "System",
           "System.Net.Http"
         ],
         "compile": {
@@ -26,18 +18,10 @@
       }
     },
     ".NETFramework,Version=v4.5.1": {
-      "Newtonsoft.Json/8.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Octokit/0.9.0": {
+      "Octokit/0.19.0": {
         "type": "package",
         "frameworkAssemblies": [
+          "System",
           "System.Net.Http"
         ],
         "compile": {
@@ -49,18 +33,10 @@
       }
     },
     ".NETFramework,Version=v4.5.2": {
-      "Newtonsoft.Json/8.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Octokit/0.9.0": {
+      "Octokit/0.19.0": {
         "type": "package",
         "frameworkAssemblies": [
+          "System",
           "System.Net.Http"
         ],
         "compile": {
@@ -72,18 +48,10 @@
       }
     },
     ".NETFramework,Version=v4.6": {
-      "Newtonsoft.Json/8.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Octokit/0.9.0": {
+      "Octokit/0.19.0": {
         "type": "package",
         "frameworkAssemblies": [
+          "System",
           "System.Net.Http"
         ],
         "compile": {
@@ -95,18 +63,40 @@
       }
     },
     ".NETFramework,Version=v4.6.1": {
-      "Newtonsoft.Json/8.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Octokit/0.9.0": {
+      "Octokit/0.19.0": {
         "type": "package",
         "frameworkAssemblies": [
+          "System",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/Octokit.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Octokit.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1": {
+      "Octokit/0.19.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/Octokit.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Octokit.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.6": {
+      "Octokit/0.19.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
           "System.Net.Http"
         ],
         "compile": {
@@ -119,68 +109,48 @@
     }
   },
   "libraries": {
-    "Newtonsoft.Json/8.0.3": {
-      "sha512": "KGsYQdS2zLH+H8x2cZaSI7e+YZ4SFIbyy1YJQYl6GYBWjf5o4H1A68nxyq+WTyVSOJQ4GqS/DiPE+UseUizgMg==",
-      "type": "package",
-      "files": [
-        "Newtonsoft.Json.8.0.3.nupkg.sha512",
-        "Newtonsoft.Json.nuspec",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
-        "tools/install.ps1"
-      ]
-    },
-    "Octokit/0.9.0": {
-      "sha512": "++Z45U7efyf8Xu46o+G4Qc3Jwq35s73FLqn/5AEqVcr9yyN7J8so4FbKAKcOK2jOz2rAlpNiJaf4OdUZb7uDKg==",
+    "Octokit/0.19.0": {
+      "sha512": "7o3Yp7HvsAZeZdPdhs9F92RZeDQn2S5WOfBpwsXiMYfBpZ/pBCeirkqxUDPalxzAyBX/uvYh05+Iei/nMumDug==",
       "type": "package",
       "files": [
         "LICENSE.txt",
-        "Octokit.0.9.0.nupkg.sha512",
+        "Octokit.0.19.0.nupkg.sha512",
         "Octokit.nuspec",
         "README.md",
         "ReleaseNotes.md",
         "lib/net45/Octokit.XML",
         "lib/net45/Octokit.dll",
         "lib/net45/Octokit.pdb",
-        "lib/netcore45/Octokit.XML",
-        "lib/netcore45/Octokit.dll",
-        "lib/netcore45/Octokit.pdb",
+        "lib/netcore451/Octokit.XML",
+        "lib/netcore451/Octokit.dll",
+        "lib/netcore451/Octokit.pdb",
         "lib/portable-net45+wp80+win+wpa81/Octokit.XML",
         "lib/portable-net45+wp80+win+wpa81/Octokit.dll",
-        "lib/portable-net45+wp80+win+wpa81/Octokit.pdb"
+        "lib/portable-net45+wp80+win+wpa81/Octokit.pdb",
+        "linqpad-samples/1-introducing-octokit.linq",
+        "linqpad-samples/10-search-issues.linq",
+        "linqpad-samples/2-releases.linq",
+        "linqpad-samples/3-browse-repositories.linq",
+        "linqpad-samples/4-observable-browse-repositories.linq",
+        "linqpad-samples/5-interact-with-git-database.linq",
+        "linqpad-samples/6-create-repository.linq",
+        "linqpad-samples/7-search-for-repos.linq",
+        "linqpad-samples/8-gists.linq",
+        "linqpad-samples/9-issues.linq"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
-      "Newtonsoft.Json >= 8.0.3",
-      "Octokit >= 0.9.0"
+      "Octokit >= 0.19.0"
     ],
-    ".NETFramework,Version=v4.5": [
-      "System"
-    ],
-    ".NETFramework,Version=v4.5.1": [
-      "System"
-    ],
-    ".NETFramework,Version=v4.5.2": [
-      "System"
-    ],
-    ".NETFramework,Version=v4.6": [
-      "System"
-    ],
-    ".NETFramework,Version=v4.6.1": [
-      "System"
-    ]
+    ".NETFramework,Version=v4.5": [],
+    ".NETFramework,Version=v4.5.1": [],
+    ".NETFramework,Version=v4.5.2": [],
+    ".NETFramework,Version=v4.6": [],
+    ".NETFramework,Version=v4.6.1": [],
+    "DNX,Version=v4.5.1": [],
+    "DNX,Version=v4.6": []
   },
   "tools": {},
   "projectFileToolGroups": {}

@@ -1,5 +1,5 @@
-{
-    "version": "2.0.1",
+﻿{
+    "version": "2.0.3",
     "description": "A collection of .Net utilities for Xml",
     "authors": [
         "Cady.IO <contact@cady.io>"
@@ -11,16 +11,18 @@
             "Xml"
         ],
         "iconUrl": "https://raw.githubusercontent.com/cady-io/dewey/master/assets/dewey-32x32.png",
-        "projectUrl": "https://github.com/cady/dewey",
+        "projectUrl": "https://github.com/cady-io/dewey",
         "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
         "repository": {
             "type": "git",
-            "url": "git://github.com/cady/dewey"
+            "url": "git://github.com/cady-io/dewey"
         },
         "summary": "A collection of .Net utilities for Xml"
     },
     "dependencies": {
-        "Microsoft.AspNetCore.Mvc.Formatters.Xml": "1.0.0-rc2-final"
+        "Microsoft.AspNetCore.Mvc.Core": "1.0.0-rc2-final",
+        "Microsoft.AspNetCore.Mvc.Formatters.Xml": "1.0.0-rc2-final",
+        "Newtonsoft.Json": "8.0.3"
     },
     "frameworks": {
         "net451": {

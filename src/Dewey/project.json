@@ -1,5 +1,5 @@
 {
-    "version": "2.0.1",
+    "version": "2.0.3",
     "description": "A collection of .Net utilities",
     "authors": [
         "Cady.IO <contact@cady.io>"
@@ -10,50 +10,63 @@
             "Extensions"
         ],
         "iconUrl": "https://raw.githubusercontent.com/cady-io/dewey/master/assets/dewey-32x32.png",
-        "projectUrl": "https://github.com/cady/dewey",
+        "projectUrl": "https://github.com/cady-io/dewey",
         "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
         "repository": {
             "type": "git",
-            "url": "git://github.com/cady/dewey"
+            "url": "git://github.com/cady-io/dewey"
         },
         "summary": "A collection of .Net utilities"
     },
-    "dependencies": {
-        "Newtonsoft.Json": "8.0.3"
-    },
     "frameworks": {
-        "net45": {
-            "frameworkAssemblies": {
-                "System": ""
-            }
-        },
-        "net451": {
-            "frameworkAssemblies": {
-                "System": ""
-            }
-        },
-        "net452": {
-            "frameworkAssemblies": {
-                "System": ""
-            }
-        },
-        "net46": {
-            "frameworkAssemblies": {
-                "System": ""
-            }
-        },
-        "net461": {
-            "frameworkAssemblies": {
-                "System": ""
-            }
-        },
+        "net45": { },
+        "net451": { },
+        "net452": { },
+        "net46": { },
+        "net461": { },
+        "dnx451": { },
+        "dnx46": { },
         "netcoreapp1.0": {
-            "imports": "dnxcore50",
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
             "dependencies": {
                 "Microsoft.NETCore.App": {
-                    "type": "platform",
-                    "version": "1.0.0-rc2-3002702"
+                    "version": "1.0.0-rc2-3002702",
+                    "type": "platform"
                 }
+            }
+        },
+        "netstandard1.3": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.5.0-rc2-24027"
+            }
+        },
+        "netstandard1.4": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.5.0-rc2-24027"
+            }
+        },
+        "netstandard1.5": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.5.0-rc2-24027"
             }
         }
     }

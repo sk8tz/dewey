@@ -11,9 +11,7 @@ namespace Dewey.Blob
         public BlobManager()
         {
             if (BlobSettings.DefaultProvider == null) {
-#if !DNXCORE50
                 Provider = new Providers.LocalBlobProvider();
-#endif
             } else {
                 Provider = BlobSettings.DefaultProvider;
             }
@@ -43,8 +41,7 @@ namespace Dewey.Blob
         public async Task DeleteBlobAsync(string container, string name) => await Provider.DeleteBlobAsync(container, name);
 
         public async Task DeleteContainerAsync(string container) => await Provider.DeleteContainerAsync(container);
-
-        #region IDisposable Support
+        
         private bool _disposed;
 
         protected virtual void Dispose(bool disposing)
@@ -61,6 +58,5 @@ namespace Dewey.Blob
         {
             Dispose(true);
         }
-        #endregion
     }
 }

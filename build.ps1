@@ -50,7 +50,7 @@ function publish {
         $packages = Get-ChildItem -Filter *.nupkg | Where-Object { $_.Extension -eq '.nupkg' }
 
         foreach($package in $packages) {
-            nuget push $package
+            nuget push $package -Source https://www.nuget.org/api/v2/package
         }
 
         Set-Location ..\..\..\..\

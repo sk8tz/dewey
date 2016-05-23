@@ -1,6 +1,6 @@
 ﻿{
     "version": "2.0.3",
-    "description": "A collection of .Net utilities for Json",
+    "description": "A collection of .Net utilities for dynamic types",
     "authors": [
         "Cady.IO <contact@cady.io>"
     ],
@@ -8,7 +8,7 @@
         "tags": [
             "Utilities",
             "Extensions",
-            "Json"
+            "Dynamic"
         ],
         "iconUrl": "https://raw.githubusercontent.com/cady-io/dewey/master/assets/dewey-32x32.png",
         "projectUrl": "https://github.com/cady-io/dewey",
@@ -17,11 +17,7 @@
             "type": "git",
             "url": "git://github.com/cady-io/dewey"
         },
-        "summary": "A collection of .Net utilities for Json"
-    },
-    "dependencies": {
-        "Newtonsoft.Json": "8.0.3",
-        "StackExchange.Redis": "1.1.572-alpha"
+        "summary": "A collection of .Net utilities for dynamic types"
     },
     "frameworks": {
         "net45": { },
@@ -43,36 +39,9 @@
                     "type": "platform"
                 }
             }
-        },
-        "netstandard1.3": {
-            "imports": [
-                "dotnet5.6",
-                "dnxcore50",
-                "portable-net45+win8"
-            ],
-            "dependencies": {
-                "NETStandard.Library": "1.5.0-rc2-24027"
-            }
-        },
-        "netstandard1.4": {
-            "imports": [
-                "dotnet5.6",
-                "dnxcore50",
-                "portable-net45+win8"
-            ],
-            "dependencies": {
-                "NETStandard.Library": "1.5.0-rc2-24027"
-            }
-        },
-        "netstandard1.5": {
-            "imports": [
-                "dotnet5.6",
-                "dnxcore50",
-                "portable-net45+win8"
-            ],
-            "dependencies": {
-                "NETStandard.Library": "1.5.0-rc2-24027"
-            }
         }
+    },
+    "dependencies": {
+        "Newtonsoft.Json": "8.0.3"
     }
 }

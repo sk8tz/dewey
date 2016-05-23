@@ -1,5 +1,4 @@
-﻿#if !DNXCORE50
-using System;
+﻿using System;
 using System.IO;
 using System.Threading.Tasks;
 using Dewey.Types;
@@ -156,4 +155,3 @@ namespace Dewey.Blob.Providers
         }
     }
 }
-#endif

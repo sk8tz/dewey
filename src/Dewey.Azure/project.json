@@ -1,5 +1,5 @@
-{
-    "version": "2.0.1",
+﻿{
+    "version": "2.0.3",
     "description": "A collection of .Net utilities for Azure",
     "authors": [
         "Cady.IO <contact@cady.io>"
@@ -11,43 +11,67 @@
             "Azure"
         ],
         "iconUrl": "https://raw.githubusercontent.com/cady-io/dewey/master/assets/dewey-32x32.png",
-        "projectUrl": "https://github.com/cady/dewey",
+        "projectUrl": "https://github.com/cady-io/dewey",
         "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
         "repository": {
             "type": "git",
-            "url": "git://github.com/cady/dewey"
+            "url": "git://github.com/cady-io/dewey"
         },
         "summary": "A collection of .Net utilities for Azure"
     },
     "dependencies": {
-        "Dewey": "2.0.1",
-        "WindowsAzure.Storage": "7.0.1-preview",
-        "Newtonsoft.Json": "8.0.3"
+        "Dewey": "2.0.3",
+        "WindowsAzure.Storage": "7.0.1-preview"
     },
     "frameworks": {
-        "net45": {
-            "frameworkAssemblies": {
-                "System": ""
+        "net45": { },
+        "net451": { },
+        "net452": { },
+        "net46": { },
+        "net461": { },
+        "dnx451": { },
+        "dnx46": { },
+        "netcoreapp1.0": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "Microsoft.NETCore.App": {
+                    "version": "1.0.0-rc2-3002702",
+                    "type": "platform"
+                }
             }
         },
-        "net451": {
-            "frameworkAssemblies": {
-                "System": ""
+        "netstandard1.3": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.5.0-rc2-24027"
             }
         },
-        "net452": {
-            "frameworkAssemblies": {
-                "System": ""
+        "netstandard1.4": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.5.0-rc2-24027"
             }
         },
-        "net46": {
-            "frameworkAssemblies": {
-                "System": ""
-            }
-        },
-        "net461": {
-            "frameworkAssemblies": {
-                "System": ""
+        "netstandard1.5": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.5.0-rc2-24027"
             }
         }
     }
