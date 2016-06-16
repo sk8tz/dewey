@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Dewey.Types
 {
@@ -160,6 +162,52 @@ namespace Dewey.Types
             }
 
             return result.ToString();
+        }
+
+        public static string ToEllipsisString(this string value, int count = 10)
+        {
+            return (value.Length < count) ? value : string.Concat(value.Substring(0, count - 1), "...");
+        }
+
+        public static bool IsValidEmail(this string emailAddress)
+        {
+            var valid = Regex.IsMatch(emailAddress.Trim(), @"\A(?:[A-Za-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[A-Za-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?\.)+[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?)\Z");
+
+            return valid;
+        }
+
+        public static string SanitizeFileName(this string value)
+        {
+            var invalidChars = Regex.Escape(new string(Path.GetInvalidFileNameChars()));
+            var invalidRegStr = string.Format(@"([{0}]*.+$)|([{0}]+)", invalidChars);
+
+            return Regex.Replace(value, invalidRegStr, "_");
+        }
+
+        public static string EscapeStringForCsv(this string value)
+        {
+            if (value == null) {
+                return null;
+            }
+
+            var result = value.Replace("\"", "\"\"");
+
+            if (result.Contains(",")) {
+                result = "\"" + result + "\"";
+            }
+
+            return result;
+        }
+
+        private static readonly List<char> InvalidCharacters = new List<char> {
+            '%', '&', '^', '*', '@', '[', ']', '(', ')', '!'
+        };
+
+        public static string Sanitize(this string value)
+        {
+            InvalidCharacters.ForEach(c => value.Replace(c, ' '));
+
+            return value;
         }
     }
 }

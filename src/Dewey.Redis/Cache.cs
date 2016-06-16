@@ -38,7 +38,7 @@ namespace Dewey.Redis
         public static void Set<T>(string key, T value)
         {
             key = GetCacheKey<T>(key);
-
+            
             _cache.StringSet(key, JsonConvert.SerializeObject(value), TimeToExpire);
         }
 

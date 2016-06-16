@@ -1,6 +1,6 @@
 ﻿{
     "version": "4.0.1",
-    "description": "A collection of .Net utilities for Security",
+    "description": "A collection of .Net utilities for System.Data",
     "authors": [
         "Cady.IO <contact@cady.io>"
     ],
@@ -8,7 +8,8 @@
         "tags": [
             "Utilities",
             "Extensions",
-            "Security"
+            "System.Data",
+            "Data"
         ],
         "iconUrl": "https://raw.githubusercontent.com/cady-io/dewey/master/assets/dewey-32x32.png",
         "projectUrl": "https://github.com/cady-io/dewey",
@@ -17,7 +18,7 @@
             "type": "git",
             "url": "git://github.com/cady-io/dewey"
         },
-        "summary": "A collection of .Net utilities for Security"
+        "summary": "A collection of .Net utilities for System.Data"
     },
     "dependencies": {
         "Dewey": "4.0.1"
@@ -25,27 +26,44 @@
     "frameworks": {
         "net45": {
             "frameworkAssemblies": {
-                "System": ""
+                "System.Data": "",
+                "System.IO": ""
             }
         },
         "net451": {
             "frameworkAssemblies": {
-                "System": ""
+                "System.Data": "",
+                "System.IO": ""
             }
         },
         "net452": {
             "frameworkAssemblies": {
-                "System": ""
+                "System.Data": "",
+                "System.IO": ""
             }
         },
         "net46": {
             "frameworkAssemblies": {
-                "System": ""
+                "System.Data": "",
+                "System.IO": ""
             }
         },
         "net461": {
             "frameworkAssemblies": {
-                "System": ""
+                "System.Data": "",
+                "System.IO": ""
+            }
+        },
+        "dnx451": {
+            "frameworkAssemblies": {
+                "System.Data": "",
+                "System.IO": ""
+            }
+        },
+        "dnx46": {
+            "frameworkAssemblies": {
+                "System.Data": "",
+                "System.IO": ""
             }
         }
     }

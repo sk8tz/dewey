@@ -34,5 +34,24 @@ namespace Dewey.Types
         public static long Divide(this long value, decimal arg) => (value / arg.ToLong());
         public static long Divide(this long value, double arg) => (value / arg.ToLong());
         public static long Divide(this long value, int arg) => (value / arg.ToLong());
+
+        public static string FileSizeToString(this long value)
+        {
+            float amount = value;
+
+            if (amount < 1024) {
+                return value + " Bytes";
+            }
+
+            amount /= 1024;
+
+            if (amount < 1024) {
+                return amount.ToString("N2") + " KB";
+            }
+
+            amount /= 1024;
+
+            return amount.ToString("N2") + " MB";
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿{
     "version": "4.0.1",
-    "description": "A collection of .Net utilities for Security",
+    "description": "A collection of .Net utilities for System.Net",
     "authors": [
         "Cady.IO <contact@cady.io>"
     ],
@@ -8,7 +8,7 @@
         "tags": [
             "Utilities",
             "Extensions",
-            "Security"
+            "System.Net"
         ],
         "iconUrl": "https://raw.githubusercontent.com/cady-io/dewey/master/assets/dewey-32x32.png",
         "projectUrl": "https://github.com/cady-io/dewey",
@@ -17,35 +17,42 @@
             "type": "git",
             "url": "git://github.com/cady-io/dewey"
         },
-        "summary": "A collection of .Net utilities for Security"
-    },
-    "dependencies": {
-        "Dewey": "4.0.1"
+        "summary": "A collection of .Net utilities for System.Net"
     },
     "frameworks": {
         "net45": {
             "frameworkAssemblies": {
-                "System": ""
+                "System.Net": ""
             }
         },
         "net451": {
             "frameworkAssemblies": {
-                "System": ""
+                "System.Net": ""
             }
         },
         "net452": {
             "frameworkAssemblies": {
-                "System": ""
+                "System.Net": ""
             }
         },
         "net46": {
             "frameworkAssemblies": {
-                "System": ""
+                "System.Net": ""
             }
         },
         "net461": {
             "frameworkAssemblies": {
-                "System": ""
+                "System.Net": ""
+            }
+        },
+        "dnx451": {
+            "frameworkAssemblies": {
+                "System.Net": ""
+            }
+        },
+        "dnx46": {
+            "frameworkAssemblies": {
+                "System.Net": ""
             }
         }
     }

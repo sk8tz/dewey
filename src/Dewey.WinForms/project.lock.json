@@ -1,0 +1,299 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.5": {
+      "Dewey/4.0.1": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5",
+        "frameworkAssemblies": [
+          "System",
+          "System.IO"
+        ],
+        "compile": {
+          "net45/Dewey.dll": {}
+        },
+        "runtime": {
+          "net45/Dewey.dll": {}
+        }
+      },
+      "Dewey.Data/4.0.1": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5",
+        "dependencies": {
+          "Dewey": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.IO"
+        ],
+        "compile": {
+          "net45/Dewey.Data.dll": {}
+        },
+        "runtime": {
+          "net45/Dewey.Data.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.1": {
+      "Dewey/4.0.1": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1",
+        "frameworkAssemblies": [
+          "System",
+          "System.IO"
+        ],
+        "compile": {
+          "net451/Dewey.dll": {}
+        },
+        "runtime": {
+          "net451/Dewey.dll": {}
+        }
+      },
+      "Dewey.Data/4.0.1": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1",
+        "dependencies": {
+          "Dewey": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.IO"
+        ],
+        "compile": {
+          "net451/Dewey.Data.dll": {}
+        },
+        "runtime": {
+          "net451/Dewey.Data.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2": {
+      "Dewey/4.0.1": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "frameworkAssemblies": [
+          "System",
+          "System.IO"
+        ],
+        "compile": {
+          "net452/Dewey.dll": {}
+        },
+        "runtime": {
+          "net452/Dewey.dll": {}
+        }
+      },
+      "Dewey.Data/4.0.1": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "Dewey": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.IO"
+        ],
+        "compile": {
+          "net452/Dewey.Data.dll": {}
+        },
+        "runtime": {
+          "net452/Dewey.Data.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6": {
+      "Dewey/4.0.1": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "frameworkAssemblies": [
+          "System",
+          "System.IO"
+        ],
+        "compile": {
+          "net46/Dewey.dll": {}
+        },
+        "runtime": {
+          "net46/Dewey.dll": {}
+        }
+      },
+      "Dewey.Data/4.0.1": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "Dewey": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.IO"
+        ],
+        "compile": {
+          "net46/Dewey.Data.dll": {}
+        },
+        "runtime": {
+          "net46/Dewey.Data.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1": {
+      "Dewey/4.0.1": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "frameworkAssemblies": [
+          "System",
+          "System.IO"
+        ],
+        "compile": {
+          "net461/Dewey.dll": {}
+        },
+        "runtime": {
+          "net461/Dewey.dll": {}
+        }
+      },
+      "Dewey.Data/4.0.1": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "Dewey": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.IO"
+        ],
+        "compile": {
+          "net461/Dewey.Data.dll": {}
+        },
+        "runtime": {
+          "net461/Dewey.Data.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1": {
+      "Dewey/4.0.1": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "frameworkAssemblies": [
+          "System",
+          "System.IO"
+        ],
+        "compile": {
+          "dnx451/Dewey.dll": {}
+        },
+        "runtime": {
+          "dnx451/Dewey.dll": {}
+        }
+      },
+      "Dewey.Data/4.0.1": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Dewey": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.IO"
+        ],
+        "compile": {
+          "dnx451/Dewey.Data.dll": {}
+        },
+        "runtime": {
+          "dnx451/Dewey.Data.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.6": {
+      "Dewey/4.0.1": {
+        "type": "project",
+        "framework": "DNX,Version=v4.6",
+        "frameworkAssemblies": [
+          "System",
+          "System.IO"
+        ],
+        "compile": {
+          "dnx46/Dewey.dll": {}
+        },
+        "runtime": {
+          "dnx46/Dewey.dll": {}
+        }
+      },
+      "Dewey.Data/4.0.1": {
+        "type": "project",
+        "framework": "DNX,Version=v4.6",
+        "dependencies": {
+          "Dewey": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.IO"
+        ],
+        "compile": {
+          "dnx46/Dewey.Data.dll": {}
+        },
+        "runtime": {
+          "dnx46/Dewey.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dewey/4.0.1": {
+      "type": "project",
+      "path": "../Dewey/project.json",
+      "msbuildProject": "../Dewey/Dewey.xproj"
+    },
+    "Dewey.Data/4.0.1": {
+      "type": "project",
+      "path": "../Dewey.Data/project.json",
+      "msbuildProject": "../Dewey.Data/Dewey.Data.xproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Dewey >= 4.0.1",
+      "Dewey.Data >= 4.0.1"
+    ],
+    ".NETFramework,Version=v4.5": [
+      "System.Data",
+      "System.Drawing",
+      "System.IO",
+      "System.Windows.Forms"
+    ],
+    ".NETFramework,Version=v4.5.1": [
+      "System.Data",
+      "System.Drawing",
+      "System.IO",
+      "System.Windows.Forms"
+    ],
+    ".NETFramework,Version=v4.5.2": [
+      "System.Data",
+      "System.Drawing",
+      "System.IO",
+      "System.Windows.Forms"
+    ],
+    ".NETFramework,Version=v4.6": [
+      "System.Data",
+      "System.Drawing",
+      "System.IO",
+      "System.Windows.Forms"
+    ],
+    ".NETFramework,Version=v4.6.1": [
+      "System.Data",
+      "System.Drawing",
+      "System.IO",
+      "System.Windows.Forms"
+    ],
+    "DNX,Version=v4.5.1": [
+      "System.Data",
+      "System.Drawing",
+      "System.IO",
+      "System.Windows.Forms"
+    ],
+    "DNX,Version=v4.6": [
+      "System.Data",
+      "System.Drawing",
+      "System.IO",
+      "System.Windows.Forms"
+    ]
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
+}

@@ -1680,7 +1680,7 @@
           "ref/netstandard1.3/System.Text.RegularExpressions.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/_._": {}
+          "lib/netstandard1.3/System.Text.RegularExpressions.dll": {}
         }
       },
       "System.Threading/4.0.11-rc2-24027": {
@@ -1693,7 +1693,7 @@
           "ref/netstandard1.3/System.Threading.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/_._": {}
+          "lib/netstandard1.3/System.Threading.dll": {}
         }
       },
       "System.Threading.Overlapped/4.0.1-rc2-24027": {
@@ -9131,24 +9131,49 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETCoreApp,Version=v1.0": [
-      "Microsoft.NETCore.App >= 1.0.0-rc2-3002702"
+      "Microsoft.NETCore.App >= 1.0.0-rc2-3002702",
+      "System.Text.RegularExpressions >= 4.0.12-rc2-24027"
     ],
-    ".NETFramework,Version=v4.5": [],
-    ".NETFramework,Version=v4.5.1": [],
-    ".NETFramework,Version=v4.5.2": [],
-    ".NETFramework,Version=v4.6": [],
-    ".NETFramework,Version=v4.6.1": [],
+    ".NETFramework,Version=v4.5": [
+      "System",
+      "System.IO"
+    ],
+    ".NETFramework,Version=v4.5.1": [
+      "System",
+      "System.IO"
+    ],
+    ".NETFramework,Version=v4.5.2": [
+      "System",
+      "System.IO"
+    ],
+    ".NETFramework,Version=v4.6": [
+      "System",
+      "System.IO"
+    ],
+    ".NETFramework,Version=v4.6.1": [
+      "System",
+      "System.IO"
+    ],
     ".NETStandard,Version=v1.3": [
-      "NETStandard.Library >= 1.5.0-rc2-24027"
+      "NETStandard.Library >= 1.5.0-rc2-24027",
+      "System.Text.RegularExpressions >= 4.0.12-rc2-24027"
     ],
     ".NETStandard,Version=v1.4": [
-      "NETStandard.Library >= 1.5.0-rc2-24027"
+      "NETStandard.Library >= 1.5.0-rc2-24027",
+      "System.Text.RegularExpressions >= 4.0.12-rc2-24027"
     ],
     ".NETStandard,Version=v1.5": [
-      "NETStandard.Library >= 1.5.0-rc2-24027"
+      "NETStandard.Library >= 1.5.0-rc2-24027",
+      "System.Text.RegularExpressions >= 4.0.12-rc2-24027"
     ],
-    "DNX,Version=v4.5.1": [],
-    "DNX,Version=v4.6": []
+    "DNX,Version=v4.5.1": [
+      "System",
+      "System.IO"
+    ],
+    "DNX,Version=v4.6": [
+      "System",
+      "System.IO"
+    ]
   },
   "tools": {},
   "projectFileToolGroups": {}
