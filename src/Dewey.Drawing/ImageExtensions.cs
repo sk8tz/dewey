@@ -8,7 +8,7 @@ namespace Dewey.Drawing
 {
     public static class ImageExtensions
     {
-        public static byte[] GetImageBytes(this Image value)
+        public static byte[] GetBytes(this Image value)
         {
             if (value == null) {
                 throw new ArgumentException(nameof(value));
@@ -44,7 +44,7 @@ namespace Dewey.Drawing
             if (value == null) {
                 throw new ArgumentException(nameof(value));
             }
-            
+
             var wScale = (float)maxWidth / value.Width;
             var hScale = (float)maxHeight / value.Height;
 
@@ -62,6 +62,13 @@ namespace Dewey.Drawing
             return result;
         }
 
+        /// <summary>
+        /// Returns the proper scale factor based on the image
+        /// </summary>
+        /// <param name="value">The image to scale</param>
+        /// <param name="maxWidth">The max width after scaling</param>
+        /// <param name="maxHeight">The max height after scaling</param>
+        /// <returns>Scale factor result</returns>
         public static double GetScaleFactor(this Image value, double maxWidth, double maxHeight)
         {
             if (value == null) {
@@ -85,6 +92,30 @@ namespace Dewey.Drawing
             }
 
             return 1.0;
+        }
+
+        public static Bitmap EmptyBitmap {
+            get {
+                var result = new Bitmap(1, 1);
+
+                var gfx = Graphics.FromImage(result);
+
+                gfx.FillRectangle(Brushes.Transparent, 0, 0, 1, 1);
+
+                return result;
+            }
+        }
+
+        public static byte[] EmptyBitmapBytes {
+            get {
+                var result = new Bitmap(1, 1);
+
+                var gfx = Graphics.FromImage(result);
+
+                gfx.FillRectangle(Brushes.Transparent, 0, 0, 1, 1);
+
+                return (byte[])(new ImageConverter()).ConvertTo(result, typeof(byte[]));
+            }
         }
     }
 }

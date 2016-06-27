@@ -29,7 +29,7 @@ namespace Dewey.Drawing
             }
         }
 
-        public static byte[] GetBitmapBytes(this Bitmap value)
+        public static byte[] GetBytes(this Bitmap value)
         {
             if (value == null) {
                 throw new ArgumentException(nameof(value));

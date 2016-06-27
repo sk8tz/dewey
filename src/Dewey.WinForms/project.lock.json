@@ -3,7 +3,7 @@
   "version": 2,
   "targets": {
     ".NETFramework,Version=v4.5": {
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "frameworkAssemblies": [
@@ -17,11 +17,11 @@
           "net45/Dewey.dll": {}
         }
       },
-      "Dewey.Data/4.0.1": {
+      "Dewey.Data/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "dependencies": {
-          "Dewey": "4.0.1"
+          "Dewey": "4.0.3"
         },
         "frameworkAssemblies": [
           "System.Data",
@@ -36,7 +36,7 @@
       }
     },
     ".NETFramework,Version=v4.5.1": {
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "frameworkAssemblies": [
@@ -50,11 +50,11 @@
           "net451/Dewey.dll": {}
         }
       },
-      "Dewey.Data/4.0.1": {
+      "Dewey.Data/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
-          "Dewey": "4.0.1"
+          "Dewey": "4.0.3"
         },
         "frameworkAssemblies": [
           "System.Data",
@@ -69,7 +69,7 @@
       }
     },
     ".NETFramework,Version=v4.5.2": {
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "frameworkAssemblies": [
@@ -83,11 +83,11 @@
           "net452/Dewey.dll": {}
         }
       },
-      "Dewey.Data/4.0.1": {
+      "Dewey.Data/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "dependencies": {
-          "Dewey": "4.0.1"
+          "Dewey": "4.0.3"
         },
         "frameworkAssemblies": [
           "System.Data",
@@ -102,7 +102,7 @@
       }
     },
     ".NETFramework,Version=v4.6": {
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "frameworkAssemblies": [
@@ -116,11 +116,11 @@
           "net46/Dewey.dll": {}
         }
       },
-      "Dewey.Data/4.0.1": {
+      "Dewey.Data/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "dependencies": {
-          "Dewey": "4.0.1"
+          "Dewey": "4.0.3"
         },
         "frameworkAssemblies": [
           "System.Data",
@@ -135,7 +135,7 @@
       }
     },
     ".NETFramework,Version=v4.6.1": {
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
         "frameworkAssemblies": [
@@ -149,11 +149,11 @@
           "net461/Dewey.dll": {}
         }
       },
-      "Dewey.Data/4.0.1": {
+      "Dewey.Data/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
         "dependencies": {
-          "Dewey": "4.0.1"
+          "Dewey": "4.0.3"
         },
         "frameworkAssemblies": [
           "System.Data",
@@ -168,7 +168,7 @@
       }
     },
     "DNX,Version=v4.5.1": {
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "frameworkAssemblies": [
@@ -182,11 +182,11 @@
           "dnx451/Dewey.dll": {}
         }
       },
-      "Dewey.Data/4.0.1": {
+      "Dewey.Data/4.0.3": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Dewey": "4.0.1"
+          "Dewey": "4.0.3"
         },
         "frameworkAssemblies": [
           "System.Data",
@@ -201,7 +201,7 @@
       }
     },
     "DNX,Version=v4.6": {
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
         "frameworkAssemblies": [
@@ -215,11 +215,11 @@
           "dnx46/Dewey.dll": {}
         }
       },
-      "Dewey.Data/4.0.1": {
+      "Dewey.Data/4.0.3": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
         "dependencies": {
-          "Dewey": "4.0.1"
+          "Dewey": "4.0.3"
         },
         "frameworkAssemblies": [
           "System.Data",
@@ -235,12 +235,12 @@
     }
   },
   "libraries": {
-    "Dewey/4.0.1": {
+    "Dewey/4.0.3": {
       "type": "project",
       "path": "../Dewey/project.json",
       "msbuildProject": "../Dewey/Dewey.xproj"
     },
-    "Dewey.Data/4.0.1": {
+    "Dewey.Data/4.0.3": {
       "type": "project",
       "path": "../Dewey.Data/project.json",
       "msbuildProject": "../Dewey.Data/Dewey.Data.xproj"
@@ -248,8 +248,8 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Dewey >= 4.0.1",
-      "Dewey.Data >= 4.0.1"
+      "Dewey >= 4.0.3",
+      "Dewey.Data >= 4.0.3"
     ],
     ".NETFramework,Version=v4.5": [
       "System.Data",

@@ -2234,7 +2234,7 @@
           "lib/dotnet5.4/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.0",
         "dependencies": {
@@ -2445,7 +2445,7 @@
           "lib/net40/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
         "frameworkAssemblies": [
@@ -2656,7 +2656,7 @@
           "lib/net40/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
         "frameworkAssemblies": [
@@ -2867,7 +2867,7 @@
           "lib/net40/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
         "frameworkAssemblies": [
@@ -3078,7 +3078,7 @@
           "lib/net40/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
         "frameworkAssemblies": [
@@ -3289,7 +3289,7 @@
           "lib/net40/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
         "frameworkAssemblies": [
@@ -4487,7 +4487,7 @@
           "lib/dotnet5.4/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.3",
         "dependencies": {
@@ -5857,7 +5857,7 @@
           "lib/dotnet5.4/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
@@ -7244,7 +7244,7 @@
           "lib/dotnet5.4/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.5",
         "dependencies": {
@@ -7463,7 +7463,7 @@
           "lib/net40/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "frameworkAssemblies": [
@@ -7682,7 +7682,7 @@
           "lib/net40/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Dewey/4.0.1": {
+      "Dewey/4.0.3": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
         "frameworkAssemblies": [
@@ -12750,7 +12750,7 @@
         "lib/wpa/Microsoft.WindowsAzure.Storage.pdb"
       ]
     },
-    "Dewey/4.0.1": {
+    "Dewey/4.0.3": {
       "type": "project",
       "path": "../Dewey/project.json",
       "msbuildProject": "../Dewey/Dewey.xproj"
@@ -12758,7 +12758,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Dewey >= 4.0.1",
+      "Dewey >= 4.0.3",
       "WindowsAzure.Storage >= 7.0.1-preview"
     ],
     ".NETCoreApp,Version=v1.0": [
