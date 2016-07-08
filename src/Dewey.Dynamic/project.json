@@ -1,9 +1,14 @@
-﻿{
-    "version": "4.0.3",
+{
+    "title": "Dewey Dynamic",
+    "version": "5.0.0",
     "description": "A collection of .Net utilities for dynamic types",
     "authors": [
         "Cady.IO <contact@cady.io>"
     ],
+    "buildOptions": {
+        "allowUnsafe": true,
+        "debugType": "portable"
+    },
     "packOptions": {
         "tags": [
             "Utilities",
@@ -13,6 +18,9 @@
         "iconUrl": "https://raw.githubusercontent.com/cady-io/dewey/master/assets/dewey-32x32.png",
         "projectUrl": "https://github.com/cady-io/dewey",
         "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+        "owners": [
+            "Cady.IO <contact@cady.io>"
+        ],
         "repository": {
             "type": "git",
             "url": "git://github.com/cady-io/dewey"
@@ -35,13 +43,55 @@
             ],
             "dependencies": {
                 "Microsoft.NETCore.App": {
-                    "version": "1.0.0-rc2-3002702",
+                    "version": "1.0.0",
                     "type": "platform"
-                }
+                },
+                "NETStandard.Library": "1.6.0"
+            }
+        },
+        "netstandard1.3": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0"
+            }
+        },
+        "netstandard1.4": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0"
+            }
+        },
+        "netstandard1.5": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0"
+            }
+        },
+        "netstandard1.6": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0"
             }
         }
     },
     "dependencies": {
-        "Newtonsoft.Json": "8.0.3"
+        "System.Dynamic.Runtime": "4.0.11",
+        "Newtonsoft.Json": "9.0.1"
     }
 }

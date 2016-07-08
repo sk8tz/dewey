@@ -1,9 +1,14 @@
 ﻿{
-    "version": "4.0.3",
+    "title": "Dewey Data",
+    "version": "5.0.0",
     "description": "A collection of .Net utilities for System.Data",
     "authors": [
         "Cady.IO <contact@cady.io>"
     ],
+    "buildOptions": {
+        "allowUnsafe": true,
+        "debugType": "portable"
+    },
     "packOptions": {
         "tags": [
             "Utilities",
@@ -14,6 +19,9 @@
         "iconUrl": "https://raw.githubusercontent.com/cady-io/dewey/master/assets/dewey-32x32.png",
         "projectUrl": "https://github.com/cady-io/dewey",
         "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+        "owners": [
+            "Cady.IO <contact@cady.io>"
+        ],
         "repository": {
             "type": "git",
             "url": "git://github.com/cady-io/dewey"
@@ -21,49 +29,42 @@
         "summary": "A collection of .Net utilities for System.Data"
     },
     "dependencies": {
-        "Dewey": "4.0.3"
+        "Dewey": "5.0.0"
     },
     "frameworks": {
         "net45": {
             "frameworkAssemblies": {
-                "System.Data": "",
-                "System.IO": ""
+                "System.Data": ""
             }
         },
         "net451": {
             "frameworkAssemblies": {
-                "System.Data": "",
-                "System.IO": ""
+                "System.Data": ""
             }
         },
         "net452": {
             "frameworkAssemblies": {
-                "System.Data": "",
-                "System.IO": ""
+                "System.Data": ""
             }
         },
         "net46": {
             "frameworkAssemblies": {
-                "System.Data": "",
-                "System.IO": ""
+                "System.Data": ""
             }
         },
         "net461": {
             "frameworkAssemblies": {
-                "System.Data": "",
-                "System.IO": ""
+                "System.Data": ""
             }
         },
         "dnx451": {
             "frameworkAssemblies": {
-                "System.Data": "",
-                "System.IO": ""
+                "System.Data": ""
             }
         },
         "dnx46": {
             "frameworkAssemblies": {
-                "System.Data": "",
-                "System.IO": ""
+                "System.Data": ""
             }
         }
     }

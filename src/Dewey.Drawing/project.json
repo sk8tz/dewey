@@ -1,9 +1,14 @@
 ﻿{
-    "version": "4.0.3",
+    "title": "Dewey Drawing",
+    "version": "5.0.0",
     "description": "A collection of .Net utilities for System.Drawing",
     "authors": [
         "Cady.IO <contact@cady.io>"
     ],
+    "buildOptions": {
+        "allowUnsafe": true,
+        "debugType": "portable"
+    },
     "packOptions": {
         "tags": [
             "Utilities",
@@ -14,6 +19,9 @@
         "iconUrl": "https://raw.githubusercontent.com/cady-io/dewey/master/assets/dewey-32x32.png",
         "projectUrl": "https://github.com/cady-io/dewey",
         "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+        "owners": [
+            "Cady.IO <contact@cady.io>"
+        ],
         "repository": {
             "type": "git",
             "url": "git://github.com/cady-io/dewey"
@@ -21,49 +29,42 @@
         "summary": "A collection of .Net utilities for System.Drawing"
     },
     "dependencies": {
-        "Dewey": "4.0.3"
+        "Dewey": "5.0.0"
     },
     "frameworks": {
         "net45": {
             "frameworkAssemblies": {
-                "System.Drawing": "",
-                "System.IO": ""
+                "System.Drawing": ""
             }
         },
         "net451": {
             "frameworkAssemblies": {
-                "System.Drawing": "",
-                "System.IO": ""
+                "System.Drawing": ""
             }
         },
         "net452": {
             "frameworkAssemblies": {
-                "System.Drawing": "",
-                "System.IO": ""
+                "System.Drawing": ""
             }
         },
         "net46": {
             "frameworkAssemblies": {
-                "System.Drawing": "",
-                "System.IO": ""
+                "System.Drawing": ""
             }
         },
         "net461": {
             "frameworkAssemblies": {
-                "System.Drawing": "",
-                "System.IO": ""
+                "System.Drawing": ""
             }
         },
         "dnx451": {
             "frameworkAssemblies": {
-                "System.Drawing": "",
-                "System.IO": ""
+                "System.Drawing": ""
             }
         },
         "dnx46": {
             "frameworkAssemblies": {
-                "System.Drawing": "",
-                "System.IO": ""
+                "System.Drawing": ""
             }
         }
     }

@@ -3,13 +3,9 @@
   "version": 2,
   "targets": {
     ".NETFramework,Version=v4.5": {
-      "Dewey/4.0.3": {
+      "Dewey/5.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5",
-        "frameworkAssemblies": [
-          "System",
-          "System.IO"
-        ],
         "compile": {
           "net45/Dewey.dll": {}
         },
@@ -19,13 +15,9 @@
       }
     },
     ".NETFramework,Version=v4.5.1": {
-      "Dewey/4.0.3": {
+      "Dewey/5.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1",
-        "frameworkAssemblies": [
-          "System",
-          "System.IO"
-        ],
         "compile": {
           "net451/Dewey.dll": {}
         },
@@ -35,13 +27,9 @@
       }
     },
     ".NETFramework,Version=v4.5.2": {
-      "Dewey/4.0.3": {
+      "Dewey/5.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.2",
-        "frameworkAssemblies": [
-          "System",
-          "System.IO"
-        ],
         "compile": {
           "net452/Dewey.dll": {}
         },
@@ -51,13 +39,9 @@
       }
     },
     ".NETFramework,Version=v4.6": {
-      "Dewey/4.0.3": {
+      "Dewey/5.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6",
-        "frameworkAssemblies": [
-          "System",
-          "System.IO"
-        ],
         "compile": {
           "net46/Dewey.dll": {}
         },
@@ -67,13 +51,9 @@
       }
     },
     ".NETFramework,Version=v4.6.1": {
-      "Dewey/4.0.3": {
+      "Dewey/5.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
-        "frameworkAssemblies": [
-          "System",
-          "System.IO"
-        ],
         "compile": {
           "net461/Dewey.dll": {}
         },
@@ -83,13 +63,9 @@
       }
     },
     "DNX,Version=v4.5.1": {
-      "Dewey/4.0.3": {
+      "Dewey/5.0.0": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
-        "frameworkAssemblies": [
-          "System",
-          "System.IO"
-        ],
         "compile": {
           "dnx451/Dewey.dll": {}
         },
@@ -99,13 +75,9 @@
       }
     },
     "DNX,Version=v4.6": {
-      "Dewey/4.0.3": {
+      "Dewey/5.0.0": {
         "type": "project",
         "framework": "DNX,Version=v4.6",
-        "frameworkAssemblies": [
-          "System",
-          "System.IO"
-        ],
         "compile": {
           "dnx46/Dewey.dll": {}
         },
@@ -116,7 +88,7 @@
     }
   },
   "libraries": {
-    "Dewey/4.0.3": {
+    "Dewey/5.0.0": {
       "type": "project",
       "path": "../Dewey/project.json",
       "msbuildProject": "../Dewey/Dewey.xproj"
@@ -124,35 +96,28 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Dewey >= 4.0.3"
+      "Dewey >= 5.0.0"
     ],
     ".NETFramework,Version=v4.5": [
-      "System.Drawing",
-      "System.IO"
+      "System.Drawing"
     ],
     ".NETFramework,Version=v4.5.1": [
-      "System.Drawing",
-      "System.IO"
+      "System.Drawing"
     ],
     ".NETFramework,Version=v4.5.2": [
-      "System.Drawing",
-      "System.IO"
+      "System.Drawing"
     ],
     ".NETFramework,Version=v4.6": [
-      "System.Drawing",
-      "System.IO"
+      "System.Drawing"
     ],
     ".NETFramework,Version=v4.6.1": [
-      "System.Drawing",
-      "System.IO"
+      "System.Drawing"
     ],
     "DNX,Version=v4.5.1": [
-      "System.Drawing",
-      "System.IO"
+      "System.Drawing"
     ],
     "DNX,Version=v4.6": [
-      "System.Drawing",
-      "System.IO"
+      "System.Drawing"
     ]
   },
   "tools": {},

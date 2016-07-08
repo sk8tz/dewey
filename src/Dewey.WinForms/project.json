@@ -1,9 +1,14 @@
 ﻿{
-    "version": "4.0.3",
+    "title": "Dewey WinForms",
+    "version": "5.0.0",
     "description": "A collection of .Net utilities for Windows Forms",
     "authors": [
         "Cady.IO <contact@cady.io>"
     ],
+    "buildOptions": {
+        "allowUnsafe": true,
+        "debugType": "portable"
+    },
     "packOptions": {
         "tags": [
             "Utilities",
@@ -13,6 +18,9 @@
         "iconUrl": "https://raw.githubusercontent.com/cady-io/dewey/master/assets/dewey-32x32.png",
         "projectUrl": "https://github.com/cady-io/dewey",
         "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+        "owners": [
+            "Cady.IO <contact@cady.io>"
+        ],
         "repository": {
             "type": "git",
             "url": "git://github.com/cady-io/dewey"
@@ -20,8 +28,8 @@
         "summary": "A collection of .Net utilities for Windows Forms"
     },
     "dependencies": {
-        "Dewey": "4.0.3",
-        "Dewey.Data": "4.0.3"
+        "Dewey": "5.0.0",
+        "Dewey.Data": "5.0.0"
     },
     "frameworks": {
         "net45": {

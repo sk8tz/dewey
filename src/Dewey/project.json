@@ -1,9 +1,14 @@
 {
-    "version": "4.0.3",
+    "title": "Dewey",
+    "version": "5.0.0",
     "description": "A collection of .Net utilities",
     "authors": [
         "Cady.IO <contact@cady.io>"
     ],
+    "buildOptions": {
+        "allowUnsafe": true,
+        "debugType": "portable"
+    },
     "packOptions": {
         "tags": [
             "Utilities",
@@ -12,6 +17,9 @@
         "iconUrl": "https://raw.githubusercontent.com/cady-io/dewey/master/assets/dewey-32x32.png",
         "projectUrl": "https://github.com/cady-io/dewey",
         "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+        "owners": [
+            "Cady.IO <contact@cady.io>"
+        ],
         "repository": {
             "type": "git",
             "url": "git://github.com/cady-io/dewey"
@@ -19,48 +27,13 @@
         "summary": "A collection of .Net utilities"
     },
     "frameworks": {
-        "net45": {
-            "frameworkAssemblies": {
-                "System": "",
-                "System.IO": ""
-            }
-        },
-        "net451": {
-            "frameworkAssemblies": {
-                "System": "",
-                "System.IO": ""
-            }
-        },
-        "net452": {
-            "frameworkAssemblies": {
-                "System": "",
-                "System.IO": ""
-            }
-        },
-        "net46": {
-            "frameworkAssemblies": {
-                "System": "",
-                "System.IO": ""
-            }
-        },
-        "net461": {
-            "frameworkAssemblies": {
-                "System": "",
-                "System.IO": ""
-            }
-        },
-        "dnx451": {
-            "frameworkAssemblies": {
-                "System": "",
-                "System.IO": ""
-            }
-        },
-        "dnx46": {
-            "frameworkAssemblies": {
-                "System": "",
-                "System.IO": ""
-            }
-        },
+        "net45": { },
+        "net451": { },
+        "net452": { },
+        "net46": { },
+        "net461": { },
+        "dnx451": { },
+        "dnx46": { },
         "netcoreapp1.0": {
             "imports": [
                 "dotnet5.6",
@@ -69,10 +42,11 @@
             ],
             "dependencies": {
                 "Microsoft.NETCore.App": {
-                    "version": "1.0.0-rc2-3002702",
+                    "version": "1.0.0",
                     "type": "platform"
                 },
-                "System.Text.RegularExpressions": "4.0.12-rc2-24027"
+                "NETStandard.Library": "1.6.0",
+                "System.Text.RegularExpressions": "4.1.0"
             }
         },
         "netstandard1.3": {
@@ -82,8 +56,8 @@
                 "portable-net45+win8"
             ],
             "dependencies": {
-                "NETStandard.Library": "1.5.0-rc2-24027",
-                "System.Text.RegularExpressions": "4.0.12-rc2-24027"
+                "NETStandard.Library": "1.6.0",
+                "System.Text.RegularExpressions": "4.1.0"
             }
         },
         "netstandard1.4": {
@@ -93,8 +67,8 @@
                 "portable-net45+win8"
             ],
             "dependencies": {
-                "NETStandard.Library": "1.5.0-rc2-24027",
-                "System.Text.RegularExpressions": "4.0.12-rc2-24027"
+                "NETStandard.Library": "1.6.0",
+                "System.Text.RegularExpressions": "4.1.0"
             }
         },
         "netstandard1.5": {
@@ -104,8 +78,19 @@
                 "portable-net45+win8"
             ],
             "dependencies": {
-                "NETStandard.Library": "1.5.0-rc2-24027",
-                "System.Text.RegularExpressions": "4.0.12-rc2-24027"
+                "NETStandard.Library": "1.6.0",
+                "System.Text.RegularExpressions": "4.1.0"
+            }
+        },
+        "netstandard1.6": {
+            "imports": [
+                "dotnet5.6",
+                "dnxcore50",
+                "portable-net45+win8"
+            ],
+            "dependencies": {
+                "NETStandard.Library": "1.6.0",
+                "System.Text.RegularExpressions": "4.1.0"
             }
         }
     }
